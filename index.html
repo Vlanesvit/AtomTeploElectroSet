@@ -22,16 +22,478 @@
 		<script src="js/rs-header.js" defer></script>
 		<header>
 			<div class="rs-header">
+				<div class="rs-header__container">
+					<div class="rs-header__wrapper">
+						<div class="rs-header__logo">
+							<a href="index.html">
+								<img src="./img/header/logo.svg" alt="">
+								<img src="./img/header/logo_scroll.svg" alt="">
+							</a>
+						</div>
+
+						<div class="rs-header__menu menu">
+							<button type="button" class="menu__icon icon-menu"><span></span></button>
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu-item"><a href="index.html">Главная</a></li>
+									<li class="menu-item dropdown">
+										<a href="about.html">О компании</a>
+										<ul class="dropdown__menu" hidden>
+											<li class="menu-item"><a href="#">Реквизиты</a></li>
+											<li class="menu-item"><a href="#">Структура</a></li>
+											<li class="menu-item"><a href="#">История</a></li>
+											<li class="menu-item"><a href="#">Миссия и ценности</a></li>
+											<li class="menu-item"><a href="#">Кадровая политика</a></li>
+											<li class="menu-item"><a href="#">Вакансии</a></li>
+											<li class="menu-item"><a href="#">Противодействие коррупции</a></li>
+											<li class="menu-item"><a href="#">Безопасность</a></li>
+											<li class="menu-item"><a href="#">Политика в области персональных данных</a>
+											</li>
+											<li class="menu-item"><a href="project-activities.html">Проектная
+													деятельность</a></li>
+											<li class="menu-item"><a href="#">Раскрытие информации</a></li>
+										</ul>
+									</li>
+									<li class="menu-item dropdown">
+										<a href="#">Медиа</a>
+										<ul class="dropdown__menu" hidden>
+											<li class="menu-item"><a href="news.html">Новости</a></li>
+											<li class="menu-item"><a href="media-gallery.html">Медиа галерея</a></li>
+											<li class="menu-item"><a href="#">Контакты для СМИ</a></li>
+										</ul>
+									</li>
+									<li class="menu-item dropdown">
+										<a href="branch.html">Филиалы</a>
+										<ul class="dropdown__menu" hidden>
+											<li class="menu-item"><a href="branch-page.html">АТЭС-Нововоронеж</a></li>
+											<li class="menu-item"><a href="branch-page.html">АТЭС-Десногорск</a></li>
+											<li class="menu-item"><a href="branch-page.html">АТЭС-Полярные зори</a></li>
+											<li class="menu-item"><a href="branch-page.html">АТЭС-Заречный</a></li>
+											<li class="menu-item"><a href="branch-page.html">АТЭС-Удомля</a></li>
+											<li class="menu-item"><a href="branch-page.html">АТЭС-Сосновый бор</a></li>
+										</ul>
+									</li>
+									<li class="menu-item"><a href="consumer.html">Потребителям</a></li>
+									<li class="menu-item"><a href="#">Поставщикам</a></li>
+									<li class="menu-item"><a href="contact.html">Контакты</a></li>
+								</ul>
+							</nav>
+						</div>
+
+						<div class="rs-header__search">
+							<a href="#" class="search-btn search-show">
+								<svg width="24" height="25" viewBox="0 0 24 25" fill="none">
+									<path
+										d="M11 6.75879C13.7614 6.75879 16 8.99737 16 11.7588M16.6588 17.4137L21 21.7588M19 11.7588C19 16.1771 15.4183 19.7588 11 19.7588C6.58172 19.7588 3 16.1771 3 11.7588C3 7.34051 6.58172 3.75879 11 3.75879C15.4183 3.75879 19 7.34051 19 11.7588Z"
+										stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</a>
+						</div>
+
+						<div class="rs-header__login">
+							<a href="#" class="_rs-icon-user">Вход в личный кабинет</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</header>
 
 		<main class="page">
+
+			<link rel="stylesheet" href="css/rs-slider.css">
+			<script src="js/rs-slider.js" defer></script>
+			<section class="rs-slider">
+				<div class="rs-slider__slider swiper">
+					<div class="rs-slider__swiper swiper-wrapper">
+						<div class="rs-slider__slide swiper-slide">
+							<div class="rs-slider__bg">
+								<img class="rs-slider__bg--desktop" src="./img/blocks/slider/slider_1.jpg" alt="">
+								<img class="rs-slider__bg--mobile" src="./img/blocks/slider/slider_1_min.jpg" alt="">
+							</div>
+							<div class="rs-slider__content">
+								<div class="rs-slider__container">
+									<div class="rs-slider__body">
+										<h1 class="rst-b-60">АтомТеплоЭлектроСеть</h1>
+										<h5 class="rst-l-20">Основная задача АТЭС – доставлять тепловую энергию, а также
+											обеспечивать водоснабжение и водоотведение конечных потребителей с
+											максимальной эффективностью и с минимальными потерями</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="rs-slider__slide swiper-slide">
+							<div class="rs-slider__bg">
+								<img class="rs-slider__bg--desktop" src="./img/blocks/slider/slider_2.jpg" alt="">
+								<img class="rs-slider__bg--mobile" src="./img/blocks/slider/slider_2_min.jpg" alt="">
+							</div>
+							<div class="rs-slider__content">
+								<div class="rs-slider__container">
+									<div class="rs-slider__body">
+										<h1 class="rst-b-60">АтомТеплоЭлектроСеть</h1>
+										<h5 class="rst-l-20">В перспективе главной задачей компании является интеграция
+											современных, эффективных цифровых решений, позволяющих повысить
+											производительность труда, увеличить скорость принятия решений и повышения
+											надежности работы оборудования (предиктивная аналитика, цифровые модели
+											котельных)</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="rs-slider__slide swiper-slide">
+							<div class="rs-slider__bg">
+								<img class="rs-slider__bg--desktop" src="./img/blocks/slider/slider_3.jpg" alt="">
+								<img class="rs-slider__bg--mobile" src="./img/blocks/slider/slider_3_min.jpg" alt="">
+							</div>
+							<div class="rs-slider__content">
+								<div class="rs-slider__container">
+									<div class="rs-slider__body">
+										<h1 class="rst-b-60">АтомТеплоЭлектроСеть</h1>
+										<h5 class="rst-l-20">На горизонте стратегического планирования до 2030-2045
+											годов компания будет обеспечена возрастающим объемом работы и функционала,
+											поскольку поставка энергоресурсов и обеспечение комфортных условий жизни
+											людей всегда будут востребованы</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="rs-slider__fraction"></div>
+					<div class="rs-slider__pagination swiper-pagination"></div>
+				</div>
+			</section>
+
+			<link rel="stylesheet" href="css/rs-news.css">
+			<section class="rs-news">
+				<div class="rs-news__container">
+					<div class="section-header">
+						<h2 class="rst-r-25">Новости</h2>
+					</div>
+					<div class="rs-news__list">
+						<div class="rs-news__item">
+							<a href="news-page.html">
+								<div class="rs-news__img">
+									<img src="./img/blocks/news/news_1.jpg" alt="">
+								</div>
+								<div class="rs-news__desc">
+									<div class="rs-news__body">
+										<div class="rst-l-20 rs-news__date">12.10.2023</div>
+										<h3 class="rst-r-30">Росатом и Российско-Кыргызский фонд развития подписали
+											соглашение о намерениях по реализации проекта по строительству
+											ветроэлектростанции</h3>
+									</div>
+									<ul class="rs-news__tag">
+										<li>Росатом</li>
+										<li>Партнерство</li>
+									</ul>
+								</div>
+							</a>
+						</div>
+						<div class="rs-news__item">
+							<a href="news-page.html">
+								<div class="rs-news__img">
+									<img src="./img/blocks/news/news_2.jpg" alt="">
+								</div>
+								<div class="rs-news__desc">
+									<div class="rs-news__body">
+										<div class="rst-l-20 rs-news__date">12.10.2023</div>
+										<h3 class="rst-r-30">Концерн «Росэнергоатом» и Санкт-Петербургская международная
+											товарно-сырьевая биржа подписали соглашение о развитии рынка торговли
+											«зелеными» сертификатами</h3>
+									</div>
+									<ul class="rs-news__tag">
+										<li>Росатом</li>
+										<li>АТЭС-Полярные зори</li>
+									</ul>
+								</div>
+							</a>
+						</div>
+						<div class="rs-news__item">
+							<a href="news-page.html">
+								<div class="rs-news__img">
+									<img src="./img/blocks/news/news_3.jpg" alt="">
+								</div>
+								<div class="rs-news__desc">
+									<div class="rs-news__body">
+										<div class="rst-l-20 rs-news__date">12.10.2023</div>
+										<h3 class="rst-r-30">В Иркутской области начался демонтаж последнего опасного
+											производственного объекта на площадке бывшего предприятия «Усольехимпром»
+										</h3>
+									</div>
+									<ul class="rs-news__tag">
+										<li>Партнерство</li>
+										<li>АТЭС-Заречный</li>
+									</ul>
+								</div>
+							</a>
+						</div>
+						<div class="rs-news__item">
+							<a href="news-page.html">
+								<div class="rs-news__img">
+									<img src="./img/blocks/news/news_4.jpg" alt="">
+								</div>
+								<div class="rs-news__desc">
+									<div class="rs-news__body">
+										<div class="rst-l-20 rs-news__date">12.10.2023</div>
+										<h3 class="rst-r-30">Топливный дивизион Росатома впервые поставил свежее ядерное
+											топливо для плавучей атомной теплоэлектростанции</h3>
+									</div>
+									<ul class="rs-news__tag">
+										<li>Строительство</li>
+										<li>АТЭС-Сосновый бор</li>
+									</ul>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<link rel="stylesheet" href="css/rs-services.css">
+			<section class="rs-services">
+				<div class="rs-services__container">
+					<div class="section-header">
+						<h2 class="rst-r-25">Направления деятельности </h2>
+					</div>
+					<div class="rs-services__list">
+						<div class="rs-services__item">
+							<div class="rs-services__img">
+								<img class="rs-services__img--desktop" src="./img/blocks/services/servise_1.svg" alt="">
+								<img class="rs-services__img--mobile" src="./img/blocks/services/servise_1_min.svg"
+									alt="">
+								<img class="rs-services__img--desktop--hover"
+									src="./img/blocks/services/servise_1--hover.svg" alt="">
+								<img class="rs-services__img--mobile--hover"
+									src="./img/blocks/services/servise_1_min__hover.svg" alt="">
+							</div>
+							<div class="rs-services__desc">
+								<h3 class="rst-r-32">Теплоснабжение</h3>
+								<p class="rst-l-18">Планирование, поставка и распределение тепла для обеспечения
+									комфортных условий в зданиях и сооружениях</p>
+							</div>
+						</div>
+
+						<div class="rs-services__item">
+							<div class="rs-services__img">
+								<img class="rs-services__img--desktop" src="./img/blocks/services/servise_2.svg" alt="">
+								<img class="rs-services__img--mobile" src="./img/blocks/services/servise_2_min.svg"
+									alt="">
+								<img class="rs-services__img--desktop--hover"
+									src="./img/blocks/services/servise_2--hover.svg" alt="">
+								<img class="rs-services__img--mobile--hover"
+									src="./img/blocks/services/servise_2_min__hover.svg" alt="">
+							</div>
+							<div class="rs-services__desc">
+								<h3 class="rst-r-32">Водоснабжение и водоотведение</h3>
+								<p class="rst-l-18">Обеспечение надежного и безопасного доступа к питьевой воде и
+									правильной утилизации сточных вод</p>
+							</div>
+						</div>
+
+						<div class="rs-services__item">
+							<div class="rs-services__img">
+								<img class="rs-services__img--desktop" src="./img/blocks/services/servise_3.svg" alt="">
+								<img class="rs-services__img--mobile" src="./img/blocks/services/servise_3_min.svg"
+									alt="">
+								<img class="rs-services__img--desktop--hover"
+									src="./img/blocks/services/servise_3--hover.svg" alt="">
+								<img class="rs-services__img--mobile--hover"
+									src="./img/blocks/services/servise_3_min__hover.svg" alt="">
+							</div>
+							<div class="rs-services__desc">
+								<h3 class="rst-r-32">Эксплуатация инженерной инфраструктуры</h3>
+								<p class="rst-l-18">Обслуживание и управление системами энергоснабжения, водоснабжения,
+									канализации и другими инженерными системами</p>
+							</div>
+						</div>
+
+						<div class="rs-services__item">
+							<div class="rs-services__img">
+								<img class="rs-services__img--desktop" src="./img/blocks/services/servise_4.svg" alt="">
+								<img class="rs-services__img--mobile" src="./img/blocks/services/servise_4_min.svg"
+									alt="">
+								<img class="rs-services__img--desktop--hover"
+									src="./img/blocks/services/servise_4--hover.svg" alt="">
+								<img class="rs-services__img--mobile--hover"
+									src="./img/blocks/services/servise_4_min__hover.svg" alt="">
+							</div>
+							<div class="rs-services__desc">
+								<h3 class="rst-r-32">Проектная деятельность
+									и инжиниринг, развитие коммунальных систем</h3>
+								<p class="rst-l-18">Разработка проектов, инжиниринговая поддержка и совершенствование
+									коммунальных систем с учетом энергоэффективности и экологических требований</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<link rel="stylesheet" href="css/rs-about.css">
+			<section class="rs-about">
+				<div class="rs-about__container">
+					<div class="section-header">
+						<h2 class="rst-r-25">О компании</h2>
+						<a href="about.html" class="rs-link _rs-icon-chevron-right">Подробнее</a>
+					</div>
+					<div class="rs-about__blocks">
+						<div class="rs-about__block">
+							<div class="rs-about__desc">
+								<h2 class="rst-r-25">Общество с ограниченной ответственностью «АтомТеплоЭлектроСеть»
+									создано в 2010 году.</h2>
+								<p>ООО «АтомТеплоЭлектроСеть» входит в электроэнергетический дивизион Госкорпорации
+									«Росатом».</p>
+								<p>Основными видами деятельности ООО «АтомТеплоЭлектроСеть» являются производство,
+									передача, распределение пара и горячей воды (тепловой энергии), водоснабжение и
+									водоотведение.</p>
+								<p>ООО «АтомТеплоЭлектроСеть» как специализированная энергетическая дочерняя компания АО
+									«Концерн Росэнергоатом» осуществляет свою деятельность силами шести филиалов.</p>
+							</div>
+							<div class="rs-about__picture">
+								<div class="rs-about__img">
+									<img src="./img/blocks/about/about_1.jpg" alt="">
+								</div>
+								<div class="rs-about__label">
+									<div class="rs-about__number"><span>200 000</span> чел.</div>
+									<div class="rs-about__subtitle">Население городов присутствия</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="rs-about__block">
+							<div class="rs-about__picture">
+								<div class="rs-about__img">
+									<img src="./img/blocks/about/about_1.jpg" alt="">
+								</div>
+								<div class="rs-about__label">
+									<div class="rs-about__number"><span>>900</span></div>
+									<div class="rs-about__subtitle">квалифицированных специалистов</div>
+								</div>
+							</div>
+							<div class="rs-about__desc">
+								<h2 class="rst-r-25">Обеспечиваем качественную и безаварийную работу</h2>
+								<p>Общество осуществляет активную деятельность по внедрению новых технологий, внедрению
+									программ энергосбережения, оснащению потребителей приборами учета, выполнению работ
+									в рамках инвестиционных проектов по замене, ремонту, модернизации оборудования.</p>
+								<blockquote>
+									<p>Специалисты в области проектирования
+										и строительства осуществляют весь спектр необходимых работ и мероприятий,
+										направленных на достижение качественной и безаварийной работы.</p>
+									<img src="./img/blocks/about/isolation_mode.png" alt="">
+								</blockquote>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<link rel="stylesheet" href="css/rs-location.css">
+			<script src="js/rs-location.js" defer></script>
+			<section class="rs-location">
+				<div class="rs-location__container">
+					<div class="section-header">
+						<h2 class="rst-r-25">География присутствия</h2>
+					</div>
+					<div class="rs-location__map map" id="map"></div>
+				</div>
+			</section>
 
 		</main>
 
 		<link rel="stylesheet" href="css/rs-footer.css">
 		<footer>
 			<div class="rs-footer">
+				<div class="rs-footer__bg">
+					<img src="./img/footer/footer__bg.svg" alt="">
+				</div>
+				<div class="rs-footer__container">
+					<div class="rs-footer__wrapper">
+						<div class="rs-footer__block">
+							<div class="rs-footer__logo">
+								<img src="./img/footer/logo_white.svg" alt="">
+							</div>
+							<a href="#" class="rs-btn _btn-white">Отправить сообщение</a>
+						</div>
+						<div class="rs-footer__info">
+							<div data-spollers class="rs-footer__spollers">
+								<div class="rs-footer__spollers_item">
+									<button type="button" data-spoller
+										class="rs-footer__spollers_title _spoller-active">
+										О компании
+									</button>
+									<div class="rs-footer__spollers_body">
+										<div class="rs-footer__menu menu">
+											<nav class="menu__body">
+												<ul class="menu__list">
+													<li class="menu-item"><a href="#">Реквизиты</a></li>
+													<li class="menu-item"><a href="#">Структура</a></li>
+													<li class="menu-item"><a href="#">История</a></li>
+													<li class="menu-item"><a href="#">Миссия и ценности</a></li>
+													<li class="menu-item"><a href="#">Кадровая политика</a></li>
+													<li class="menu-item"><a href="#">Противодействие коррупции</a></li>
+													<li class="menu-item"><a href="#">Безопасность</a></li>
+													<li class="menu-item"><a href="#">Политика в области персональных
+															данных</a></li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+
+								<div class="rs-footer__spollers_item">
+									<button type="button" data-spoller class="rs-footer__spollers_title">
+										Филиалы
+									</button>
+									<div class="rs-footer__spollers_body">
+										<div class="rs-footer__menu menu">
+											<nav class="menu__body">
+												<ul class="menu__list">
+													<li class="menu-item"><a href="branch-page.html">Нововоронеж</a>
+													</li>
+													<li class="menu-item"><a href="branch-page.html">Десногорск</a></li>
+													<li class="menu-item"><a href="branch-page.html">Полярные зори</a>
+													</li>
+													<li class="menu-item"><a href="branch-page.html">Заречный</a></li>
+													<li class="menu-item"><a href="branch-page.html">Удомля</a></li>
+													<li class="menu-item"><a href="branch-page.html">Сосновый бор</a>
+													</li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+
+								<div class="rs-footer__spollers_item">
+									<button type="button" data-spoller class="rs-footer__spollers_title">
+										Меню сайта
+									</button>
+									<div class="rs-footer__spollers_body">
+										<div class="rs-footer__menu menu">
+											<nav class="menu__body">
+												<ul class="menu__list">
+													<li class="menu-item"><a href="index.html">Главная</a></li>
+													<li class="menu-item"><a href="news.html">Новости</a></li>
+													<li class="menu-item"><a href="media-gallery.html">Медиа галерея</a>
+													</li>
+													<li class="menu-item"><a href="#">Контакты для СМИ</a></li>
+													<li class="menu-item"><a href="#">Вакансии</a></li>
+													<li class="menu-item"><a href="consumer.html">Потребителям</a></li>
+													<li class="menu-item"><a href="contact.html">Контакты</a></li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="rs-footer__bottom">
+						<div class="rs-footer__copyright">© ООО «АтомТеплоЭлектроСеть» 2023. Все права защищены.</div>
+						<div class="rs-footer__source">
+							Источник фото:
+							<a href="http://reastock.ritori.ru/">http://reastock.ritori.ru/</a>
+						</div>
+						<div class="rs-footer__dev"><a href="#">Разработано в Россайт</a></div>
+					</div>
+				</div>
 			</div>
 		</footer>
 
