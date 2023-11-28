@@ -1,6 +1,3 @@
-.rs-grid-block {
-  margin: 90px 0px 110px;
-}
 .rs-grid-block__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

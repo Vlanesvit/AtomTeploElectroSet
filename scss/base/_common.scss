@@ -1,6 +1,20 @@
 section {
 	position: relative;
 	// overflow: hidden;
+	margin: 110px 0px;
+
+	@media (max-width: 1439.98px) {
+		margin: 90px 0px;
+	}
+	@media (max-width: 1169.98px) {
+		margin: 70px 0px;
+	}
+	@media (max-width: 991.98px) {
+		margin: 50px 0px;
+	}
+	@media (max-width: 767.98px) {
+		margin: 30px 0px;
+	}
 }
 
 body {
@@ -110,6 +124,21 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	margin-bottom: 50px;
+
+	@media (max-width: 1439.98px) {
+		margin-bottom: 40px;
+		padding-bottom: 20px;
+	}
+	@media (max-width: 1169.98px) {
+		margin-bottom: 30px;
+	}
+	@media (max-width: 991.98px) {
+		margin-bottom: 20px;
+		padding-bottom: 10px;
+	}
+	@media (max-width: 767.98px) {
+		margin-bottom: 10px;
+	}
 }
 
 .rst-b-60 {
@@ -118,6 +147,21 @@ body {
 	font-weight: 700;
 	line-height: normal;
 	letter-spacing: 1.8px;
+
+	@media (max-width: 1439.98px) {
+		font-size: 50px;
+	}
+	@media (max-width: 1169.98px) {
+		font-size: 40px;
+		letter-spacing: 1.2px;
+	}
+	@media (max-width: 991.98px) {
+		font-size: 30px;
+	}
+	@media (max-width: 767.98px) {
+		font-size: 20px;
+		letter-spacing: 0.6px;
+	}
 }
 
 .rst-r-32 {
@@ -125,6 +169,19 @@ body {
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
+
+	@media (max-width: 1439.98px) {
+		font-size: 28px;
+	}
+	@media (max-width: 1169.98px) {
+		font-size: 24px;
+	}
+	@media (max-width: 991.98px) {
+		font-size: 20px;
+	}
+	@media (max-width: 767.98px) {
+		font-size: 16px;
+	}
 }
 
 .rst-r-30 {
@@ -140,6 +197,19 @@ body {
 	font-weight: 400;
 	line-height: normal;
 	letter-spacing: 0.75px;
+
+	@media (max-width: 1439.98px) {
+		font-size: 22px;
+	}
+	@media (max-width: 1169.98px) {
+		font-size: 20px;
+	}
+	@media (max-width: 991.98px) {
+		font-size: 18px;
+	}
+	@media (max-width: 767.98px) {
+		font-size: 16px;
+	}
 }
 
 .rst-r-20 {
@@ -147,6 +217,13 @@ body {
 	font-style: normal;
 	font-weight: 400;
 	line-height: 120%; /* 24px */
+
+	@media (max-width: 1439.98px) {
+		font-size: 16px;
+	}
+	@media (max-width: 991.98px) {
+		font-size: 13px;
+	}
 }
 
 .rst-l-20 {
@@ -155,6 +232,13 @@ body {
 	font-weight: 300;
 	line-height: normal;
 	letter-spacing: 0.6px;
+
+	@media (max-width: 1439.98px) {
+		font-size: 16px;
+	}
+	@media (max-width: 991.98px) {
+		font-size: 13px;
+	}
 }
 
 .rst-l-18 {
@@ -163,6 +247,13 @@ body {
 	font-weight: 350;
 	line-height: normal;
 	letter-spacing: 0.54px;
+
+	@media (max-width: 1439.98px) {
+		font-size: 16px;
+	}
+	@media (max-width: 991.98px) {
+		font-size: 13px;
+	}
 }
 
 // Button ========================================================================================================================================================
@@ -183,6 +274,11 @@ body {
 	line-height: normal;
 	letter-spacing: 0.48px;
 	padding: 15px 40px;
+
+	@media (max-width: 991.98px) {
+		font-size: 13px;
+		padding: 12px 20px;
+	}
 
 	&._btn-white {
 		color: var(--font-color);
@@ -215,10 +311,26 @@ body {
 	line-height: normal;
 	letter-spacing: 0.6px;
 
+	@media (max-width: 1439.98px) {
+		font-size: 16px;
+	}
+	@media (max-width: 991.98px) {
+		font-size: 13px;
+	}
+
 	&::before {
 		font-size: 24px;
 		color: inherit;
 		margin-left: 10px;
+
+		@media (max-width: 1439.98px) {
+			font-size: 20px;
+		}
+
+		@media (max-width: 991.98px) {
+			margin-left: 5px;
+			font-size: 17px;
+		}
 	}
 }
 

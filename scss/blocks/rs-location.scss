@@ -1,6 +1,4 @@
 .rs-location {
-	margin: 110px 0px;
-
 	// .rs-location__container
 	&__container {
 	}
@@ -43,6 +41,7 @@
 	padding: 40px !important;
 	background-color: transparent;
 	margin: 0 !important;
+
 	min-width: 368px !important;
 
 	& > * {

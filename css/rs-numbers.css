@@ -1,6 +1,3 @@
-.rs-numbers {
-  margin: 110px 0px;
-}
 .rs-numbers__list {
   display: grid;
   grid-template-columns: repeat(10, 1fr);

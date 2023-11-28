@@ -1,6 +1,3 @@
-.rs-text-block {
-  margin: 90px 0px 110px;
-}
 .rs-text-block__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
