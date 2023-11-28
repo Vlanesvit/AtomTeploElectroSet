@@ -1,9 +1,6 @@
 .rs-about {
   margin: 110px 0px;
 }
-.rs-about__blocks {
-  margin-top: 50px;
-}
 .rs-about__block {
   display: -webkit-box;
   display: -ms-flexbox;

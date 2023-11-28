@@ -415,6 +415,7 @@ body.aos-animate::after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .rst-b-60 {

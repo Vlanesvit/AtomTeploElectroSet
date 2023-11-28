@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=, initial-scale=1.0">
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=38863ba5-9462-46dc-940c-d9fed985abff&lang=ru_RU"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.2.0/swiper-bundle.css" />
+	<link rel="stylesheet" href="https://unpkg.com/lightgallery@2.4.0/css/lightgallery-bundle.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/lightgallery@2.4.0/css/lg-zoom.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	<link rel="stylesheet" href="css/rs-style.css">
+	<title>Проектная деятельность - ООО «АтомТеплоЭлектроСеть»</title>
+</head>
+
+<body data-aos>
+
+	<div class="wrapper">
+
+		<link rel="stylesheet" href="css/rs-header.css">
+		<script src="js/rs-header.js" defer></script>
+		<header>
+			<div class="rs-header inner-page-header">
+				<div class="rs-header__line"></div>
+				<div class="rs-header__container">
+					<div class="rs-header__wrapper">
+						<div class="rs-header__logo">
+							<a href="index.html">
+								<img src="./img/header/logo.svg" alt="">
+								<img src="./img/header/logo_scroll.svg" alt="">
+							</a>
+						</div>
+
+						<div class="rs-header__menu menu">
+							<button type="button" class="menu__icon icon-menu"><span></span><span></span></button>
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu-item"><a href="index.html">Главная</a></li>
+									<li class="menu-item dropdown">
+										<a href="about.html">О компании</a>
+										<ul class="dropdown__menu" hidden>
+											<li class="menu-item"><a href="#">Реквизиты</a></li>
+											<li class="menu-item"><a href="#">Структура</a></li>
+											<li class="menu-item"><a href="#">История</a></li>
+											<li class="menu-item"><a href="#">Миссия и ценности</a></li>
+											<li class="menu-item"><a href="#">Кадровая политика</a></li>
+											<li class="menu-item"><a href="#">Вакансии</a></li>
+											<li class="menu-item"><a href="#">Противодействие коррупции</a></li>
+											<li class="menu-item"><a href="#">Безопасность</a></li>
+											<li class="menu-item"><a href="#">Политика в области персональных данных</a>
+											</li>
+											<li class="menu-item"><a href="project-activities.html">Проектная
+													деятельность</a></li>
+											<li class="menu-item"><a href="#">Раскрытие информации</a></li>
+										</ul>
+									</li>
+									<li class="menu-item dropdown">
+										<a href="#">Медиа</a>
+										<ul class="dropdown__menu" hidden>
+											<li class="menu-item"><a href="news.html">Новости</a></li>
+											<li class="menu-item"><a href="media-gallery.html">Медиа галерея</a></li>
+											<li class="menu-item"><a href="#">Контакты для СМИ</a></li>
+										</ul>
+									</li>
+									<li class="menu-item dropdown">
+										<a href="branch.html">Филиалы</a>
+										<ul class="dropdown__menu" hidden>
+											<li class="menu-item"><a href="branch-page.html">АТЭС-Нововоронеж</a></li>
+											<li class="menu-item"><a href="branch-page.html">АТЭС-Десногорск</a></li>
+											<li class="menu-item"><a href="branch-page.html">АТЭС-Полярные зори</a></li>
+											<li class="menu-item"><a href="branch-page.html">АТЭС-Заречный</a></li>
+											<li class="menu-item"><a href="branch-page.html">АТЭС-Удомля</a></li>
+											<li class="menu-item"><a href="branch-page.html">АТЭС-Сосновый бор</a></li>
+										</ul>
+									</li>
+									<li class="menu-item"><a href="consumer.html">Потребителям</a></li>
+									<li class="menu-item"><a href="#">Поставщикам</a></li>
+									<li class="menu-item"><a href="contact.html">Контакты</a></li>
+								</ul>
+							</nav>
+						</div>
+
+						<div class="rs-header__search search">
+							<div class="search__block search-modal">
+								<div class="search__wrapper">
+									<form action="#" class="search__form">
+										<div class="search__line">
+											<div class="search__field">
+												<input type="text" placeholder="Напишите, что хотите найти"
+													class="search__input" required>
+												<button class="search__btn search__clear" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+														<path d="M1 1.25885L9.84163 10.1005L18 18.2588" stroke="#D3D3D3"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+														<path d="M19 1.25885L10.1584 10.1005L2 18.2588" stroke="#D3D3D3"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+											<button class="search__btn search__submit" type="submit">
+												<svg width="24" height="25" viewBox="0 0 24 25" fill="none">
+													<path
+														d="M11 6.75885C13.7614 6.75885 16 8.99743 16 11.7589M16.6588 17.4138L21 21.7589M19 11.7589C19 16.1771 15.4183 19.7589 11 19.7589C6.58172 19.7589 3 16.1771 3 11.7589C3 7.34057 6.58172 3.75885 11 3.75885C15.4183 3.75885 19 7.34057 19 11.7589Z"
+														stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+
+							<a href="#" class="search-show">
+								<svg width="24" height="25" viewBox="0 0 24 25" fill="none">
+									<path
+										d="M11 6.75879C13.7614 6.75879 16 8.99737 16 11.7588M16.6588 17.4137L21 21.7588M19 11.7588C19 16.1771 15.4183 19.7588 11 19.7588C6.58172 19.7588 3 16.1771 3 11.7588C3 7.34051 6.58172 3.75879 11 3.75879C15.4183 3.75879 19 7.34051 19 11.7588Z"
+										stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+									<path d="M1 1.25885L9.84163 10.1005L18 18.2588" stroke="#D3D3D3" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M19 1.25885L10.1584 10.1005L2 18.2588" stroke="#D3D3D3" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</a>
+						</div>
+
+						<div class="rs-header__login">
+							<a href="#" class="_rs-icon-user">Вход в личный кабинет</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+
+			<link rel="stylesheet" href="css/rs-banner.css">
+			<section class="rs-banner">
+				<div class="rs-banner__bg">
+					<img src="./img/footer/footer__bg.svg" alt="">
+				</div>
+				<div class="rs-banner__container">
+					<div class="rs-banner__body">
+						<h1 class="rst-b-60">Проектная деятельность</h1>
+
+						<div class="rs-breadcrumbs">
+							<nav class="rs-breadcrumbs__navigation">
+								<ul itemscope itemtype="http://schema.org/BreadcrumbList" class="rs-breadcrumbs__list">
+									<li class="rs-breadcrumbs__item" itemprop="itemListElement" itemscope
+										itemtype="http://schema.org/ListItem">
+										<a class="rs-breadcrumbs__link" href="index.html" itemprop="item"
+											typeof="WebPage">
+											<span itemprop="name">Главная</span>
+										</a>
+										<meta itemprop="position" content="1">
+									</li>
+									<li class="rs-breadcrumbs__item" itemprop="itemListElement" itemscope=""
+										itemtype="http://schema.org/ListItem">
+										<span itemprop="name">Проектная деятельность</span>
+										<meta itemprop="position" content="2">
+									</li>
+								</ul>
+							</nav>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<link rel="stylesheet" href="css/rs-text-block.css">
+			<section class="rs-text-block">
+				<div class="rs-text-block__container">
+					<div class="rs-text-block__wrapper" data-aos="fade-up" data-aos-delay="100">
+						<div class="rs-text-block__title">
+							<h4 class="rst-r-25">В соответствии с действующими правовыми и нормативными актами РФ, ООО
+								«АТЭС» осуществляет весь спектр работ по согласованию проектной документации в надзорных
+								органах и проведению необходимых экспертиз.
+							</h4>
+							<img src="./img/blocks/about/isolation_mode.png" alt="">
+						</div>
+						<div class="rs-text-block__desc" data-aos="fade-up" data-aos-delay="200">
+							<p>В ООО «АтомТеплоЭлектроСеть» с 2012 года успешно функционирует проектный отдел,
+								выполняющий работы по проектированию следующих инженерных систем:</p>
+							<ul>
+								<li>котельные;</li>
+								<li>тепловые пункты;</li>
+								<li>тепловые сети;</li>
+								<li>газоснабжение;</li>
+								<li>водоснабжение и водоотведение;</li>
+								<li>отопление, вентиляция и кондиционирование.</li>
+							</ul>
+							<p>В соответствии с действующими правовыми и нормативными актами РФ, ООО «АТЭС» осуществляет
+								весь спектр работ по согласованию проектной документации в надзорных органах и
+								проведению необходимых экспертиз.</p>
+							<p>Для выполнения вышеуказанных работ, ООО «АТЭС» располагает необходимой разрешительной
+								документацией (свидетельство СРО №402 в ассоциации «Центр развития
+								архитектурно-строительного проектирования»), укомплектован профессиональными и
+								аттестованными специалистами.</p>
+							<p>При выполнении проектной документации используется современное лицензионное программное
+								обеспечение. В организации внедрена система менеджмента качества (сертификат
+								соответствия №RA.RU.13HA77-0055 от 22.12.2020 г.).</p>
+							<blockquote>
+								<p>
+									В случае Вашей заинтересованности, приглашаю вас к сотрудничеству и прошу обращаться
+									по телефону: <a href="tel:74951978434">+7 (495) 197-84-34 доб. 756</a>
+									или на электронный адрес
+									<a href="mailto:v.v.kopylov@atomtes.ru"><strong>v.v.kopylov@atomtes.ru</strong></a>.
+								</p>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<link rel="stylesheet" href="css/rs-table-block.css">
+			<section class="rs-table-block">
+				<div class="rs-table-block__container">
+					<div class="section-header" data-aos="fade-up" data-aos-delay="100">
+						<h2 class="rst-r-25">Выполненные за последнее время проекты</h2>
+					</div>
+					<div class="rs-table-block__wrapper">
+						<div class="rs-table-block__content">
+							<table>
+								<thead>
+									<tr>
+										<th>№</th>
+										<th>Проект</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>Модернизация систем теплоснабжения блоков №4, 6 Нововоронежской АЭС с
+											реализацией замкнутого контура циркуляции, в части технического
+											перевооружения ПНС-1.</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Модернизация систем теплоснабжения блоков НВО АЭС с реализацией замкнутого
+											контура циркуляции, в части технического перевооружения ПНС-1 и
+											переоборудования тепловых узлов транзитных потребителей, подключенных к
+											магистральным тепловым сетям, с установкой теплообменного оборудования для
+											разделения обогревающей и обогреваемой сред.</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>Перевод от паровой деаэрации водоподготовки к вакуумной деаэрации на участке
+											производства тепловой энергии и теплоносителя (котельная №2)
+											Нововоронежского филиала»</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>Перекладка участка магистральной тепловой сети Ду500 мм., от ТК №36 до ТК
+											№39 протяженностью 335 м.п., расположенного по адресу: Воронежская область,
+											г. Нововоронеж, ул. Вокзальная. (Экспертиза промбезопасности).</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>Реконструкция участка магистральной тепловой сети Ду500 мм. L=282 м.п, от ТК
+											№34 до ТК №32Б, расположенной по адресу: г. Нововоронеж.</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>Реконструкция участков магистральной тепловой сети Ду400 мм. L=125 м.п,
+											Ду300 мм. L=36 м.п от ТК №3 до ТК №4, от котельной, расположенной по адресу:
+											г. Нововоронеж, Заводской проезд, д. 1.</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>Реконструкция существующего узла учета хозпитьевой воды на участке
+											производства тепловой энергии и теплоносителя Филиала «АТЭС-Нововоронеж».
+										</td>
+									</tr>
+									<tr>
+										<td>8</td>
+										<td>Модернизация инженерных сетей и технологического комплекса Кольской АЭС.
+										</td>
+									</tr>
+									<tr>
+										<td>9</td>
+										<td>Модернизация очистных сооружений с целью приведения очищаемых стоков к
+											нормативам допустимых сбросов.</td>
+									</tr>
+									<tr>
+										<td>10</td>
+										<td>Реконструкция системы вентиляции и отопления в здании КНС №6 г. Полярные
+											Зори.</td>
+									</tr>
+									<tr>
+										<td>11</td>
+										<td>Устройство станций обеззараживания на городских очистных сооружениях г.
+											Полярные
+											Зори.</td>
+									</tr>
+									<tr>
+										<td>12</td>
+										<td>Устройство станций обеззараживания на насосной 1-ого подъема системы
+											водоснабжения г. Полярные Зори.</td>
+									</tr>
+									<tr>
+										<td>13</td>
+										<td>Модернизация сети водопровода от ВК-2846 до ВК-2920 в п. Северный,
+											расположенной
+											по адресу: Мурманская область, г. Полярные Зори.</td>
+									</tr>
+									<tr>
+										<td>14</td>
+										<td>Модернизация сети водопровода от ПГ-2 ВК-16 до ПГ-3 ВК-21 в н.п. Зашеек,
+											расположенной по адресу: Мурманская область, г. Полярные Зори.</td>
+									</tr>
+									<tr>
+										<td>15</td>
+										<td>Модернизация сети водопровода от ПГ-83 до ПГ-85, расположенной по адресу:
+											Мурманская область, г. Полярные Зори.</td>
+									</tr>
+									<tr>
+										<td>16</td>
+										<td>Модернизация инженерных сетей и технологического комплекса КАЭС.
+											Реконструкция
+											тепловой сети от тепловой камеры ТК-33а до ТК-72. Объект расположен по
+											адресу:
+											Мурманская область, г. Полярные Зори.</td>
+									</tr>
+									<tr>
+										<td>17</td>
+										<td>Реконструкция участка тепловой сети от ТК-150 до ТП-1 Ду400 L=442 м,
+											расположенный по адресу: Мурманская область, г. Полярные Зори.</td>
+									</tr>
+									<tr>
+										<td>18</td>
+										<td>Реконструкция участка водопровода от Нивский.15 до ТП-1 Ду280 L=210 м
+											расположенный по адресу: Мурманская область, г. Полярные Зори.</td>
+									</tr>
+									<tr>
+										<td>19</td>
+										<td>Техническое перевооружение станции очистки производственных сточных вод для
+											котельной, расположенный по адресу: Мурманская область, г. Полярные Зори.
+										</td>
+									</tr>
+									<tr>
+										<td>20</td>
+										<td>Реконструкция мазутной насосной: работы по устройству приточно-вытяжной
+											системы
+											вентиляции в здании мазутной насосной расположенный по адресу Мурманская
+											область, г. Полярные Зори.</td>
+									</tr>
+									<tr>
+										<td>21</td>
+										<td>Реконструкция мазутной котельной: работы по устройству приточно-вытяжной
+											системы
+											вентиляции в здании мазутной котельной расположенный по адресу: Мурманская
+											область, г. Полярные Зори.</td>
+									</tr>
+									<tr>
+										<td>22</td>
+										<td>Реконструкция сетей теплоснабжения и ГВС от ЦТП-12 (участок от ТК-144 до
+											ТК-199), расположенный по адресу: Тверская область, г. Удомля.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="rs-table-block__more">
+							<button type="button" class="rs-link _rs-icon-chevron-bottom">Показать весь список</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<link rel="stylesheet" href="css/rs-slider-block.css">
+			<script src="js/rs-slider-block.js" defer></script>
+			<section class="rs-slider-block">
+				<div class="rs-slider-block__container">
+					<div class="section-header" data-aos="fade-up" data-aos-delay="100">
+						<h2 class="rst-r-25">Примеры наших работ</h2>
+						<div class="rs-slider-block__navigation swiper-navigation">
+							<div class="rs-slider-block__button-prev swiper-button-prev _rs-icon-chevron-left"></div>
+							<div class="rs-slider-block__button-next swiper-button-next _rs-icon-chevron-right"></div>
+						</div>
+					</div>
+
+					<div class="rs-slider-block__slider swiper">
+						<div class="rs-slider-block__swiper swiper-wrapper">
+							<div class="rs-slider-block__slide swiper-slide" data-aos="fade-up" data-aos-delay="100">
+								<div class="rs-slider-block__photo">
+									<img src="./img/blocks/project/project-1.jpg" alt="">
+								</div>
+							</div>
+							<div class="rs-slider-block__slide swiper-slide" data-aos="fade-up" data-aos-delay="200">
+								<div class="rs-slider-block__photo">
+									<img src="./img/blocks/project/project-2.jpg" alt="">
+								</div>
+							</div>
+							<div class="rs-slider-block__slide swiper-slide" data-aos="fade-up" data-aos-delay="300">
+								<div class="rs-slider-block__photo">
+									<img src="./img/blocks/project/project-3.jpg" alt="">
+								</div>
+							</div>
+							<div class="rs-slider-block__slide swiper-slide" data-aos="fade-up" data-aos-delay="400">
+								<div class="rs-slider-block__photo">
+									<img src="./img/blocks/project/project-4.jpg" alt="">
+								</div>
+							</div>
+							<div class="rs-slider-block__slide swiper-slide" data-aos="fade-up" data-aos-delay="100">
+								<div class="rs-slider-block__photo">
+									<img src="./img/blocks/project/project-1.jpg" alt="">
+								</div>
+							</div>
+							<div class="rs-slider-block__slide swiper-slide" data-aos="fade-up" data-aos-delay="200">
+								<div class="rs-slider-block__photo">
+									<img src="./img/blocks/project/project-2.jpg" alt="">
+								</div>
+							</div>
+							<div class="rs-slider-block__slide swiper-slide" data-aos="fade-up" data-aos-delay="300">
+								<div class="rs-slider-block__photo">
+									<img src="./img/blocks/project/project-3.jpg" alt="">
+								</div>
+							</div>
+							<div class="rs-slider-block__slide swiper-slide" data-aos="fade-up" data-aos-delay="400">
+								<div class="rs-slider-block__photo">
+									<img src="./img/blocks/project/project-4.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<link rel="stylesheet" href="css/rs-footer.css">
+		<footer>
+			<div class="rs-footer">
+				<div class="rs-footer__bg">
+					<img src="./img/footer/footer__bg.svg" alt="">
+				</div>
+				<div class="rs-footer__container">
+					<div class="rs-footer__wrapper">
+						<div class="rs-footer__block">
+							<div class="rs-footer__logo">
+								<img src="./img/footer/logo_white.svg" alt="">
+							</div>
+							<a href="#" class="rs-btn _btn-white">Отправить сообщение</a>
+						</div>
+						<div class="rs-footer__info">
+							<div data-spollers="991.98, max" data-one-spoller class="rs-footer__spollers">
+								<div class="rs-footer__spollers_item">
+									<button type="button" data-spoller
+										class="rs-footer__spollers_title _spoller-active">
+										О компании
+									</button>
+									<div class="rs-footer__spollers_body">
+										<div class="rs-footer__menu menu">
+											<nav class="menu__body">
+												<ul class="menu__list">
+													<li class="menu-item"><a href="#">Реквизиты</a></li>
+													<li class="menu-item"><a href="#">Структура</a></li>
+													<li class="menu-item"><a href="#">История</a></li>
+													<li class="menu-item"><a href="#">Миссия и ценности</a></li>
+													<li class="menu-item"><a href="#">Кадровая политика</a></li>
+													<li class="menu-item"><a href="#">Противодействие коррупции</a></li>
+													<li class="menu-item"><a href="#">Безопасность</a></li>
+													<li class="menu-item"><a href="#">Политика в области персональных
+															данных</a></li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+
+								<div class="rs-footer__spollers_item">
+									<button type="button" data-spoller class="rs-footer__spollers_title">
+										Филиалы
+									</button>
+									<div class="rs-footer__spollers_body">
+										<div class="rs-footer__menu menu">
+											<nav class="menu__body">
+												<ul class="menu__list">
+													<li class="menu-item"><a href="branch-page.html">Нововоронеж</a>
+													</li>
+													<li class="menu-item"><a href="branch-page.html">Десногорск</a></li>
+													<li class="menu-item"><a href="branch-page.html">Полярные зори</a>
+													</li>
+													<li class="menu-item"><a href="branch-page.html">Заречный</a></li>
+													<li class="menu-item"><a href="branch-page.html">Удомля</a></li>
+													<li class="menu-item"><a href="branch-page.html">Сосновый бор</a>
+													</li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+
+								<div class="rs-footer__spollers_item">
+									<button type="button" data-spoller class="rs-footer__spollers_title">
+										Меню сайта
+									</button>
+									<div class="rs-footer__spollers_body">
+										<div class="rs-footer__menu menu">
+											<nav class="menu__body">
+												<ul class="menu__list">
+													<li class="menu-item"><a href="index.html">Главная</a></li>
+													<li class="menu-item"><a href="news.html">Новости</a></li>
+													<li class="menu-item"><a href="media-gallery.html">Медиа галерея</a>
+													</li>
+													<li class="menu-item"><a href="#">Контакты для СМИ</a></li>
+													<li class="menu-item"><a href="#">Вакансии</a></li>
+													<li class="menu-item"><a href="consumer.html">Потребителям</a></li>
+													<li class="menu-item"><a href="contact.html">Контакты</a></li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="rs-footer__bottom">
+						<div class="rs-footer__copyright">© ООО «АтомТеплоЭлектроСеть» 2023. Все права защищены.</div>
+						<div class="rs-footer__source">
+							Источник фото:
+							<a href="http://reastock.ritori.ru/">http://reastock.ritori.ru/</a>
+						</div>
+						<div class="rs-footer__dev"><a href="#">Разработано в Россайт</a></div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script src="https://unpkg.com/lightgallery@2.4.0/lightgallery.min.js"></script>
+	<script src="https://unpkg.com/lightgallery@2.4.0/plugins/zoom/lg-zoom.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
+	<script>SmoothScroll({ animationTime: 800, stepSize: 100, accelerationDelta: 50, accelerationMax: 3, touchpadSupport: false, });</script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>AOS.init({ duration: 500, easing: 'ease-out-quart', once: false });</script>
+	<script src="js/rs-script.js" type="module"></script>
+
+</body>
+
+</html>

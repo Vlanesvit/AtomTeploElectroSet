@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=, initial-scale=1.0">
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=38863ba5-9462-46dc-940c-d9fed985abff&lang=ru_RU"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.2.0/swiper-bundle.css" />
+	<link rel="stylesheet" href="https://unpkg.com/lightgallery@2.4.0/css/lightgallery-bundle.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/lightgallery@2.4.0/css/lg-zoom.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	<link rel="stylesheet" href="css/rs-style.css">
+	<title>Контакты - ООО «АтомТеплоЭлектроСеть»</title>
+</head>
+
+<body data-aos>
+
+	<div class="wrapper">
+
+		<link rel="stylesheet" href="css/rs-header.css">
+		<script src="js/rs-header.js" defer></script>
+		<header>
+			<div class="rs-header inner-page-header">
+				<div class="rs-header__line"></div>
+				<div class="rs-header__container">
+					<div class="rs-header__wrapper">
+						<div class="rs-header__logo">
+							<a href="index.html">
+								<img src="./img/header/logo.svg" alt="">
+								<img src="./img/header/logo_scroll.svg" alt="">
+							</a>
+						</div>
+
+						<div class="rs-header__menu menu">
+							<button type="button" class="menu__icon icon-menu"><span></span><span></span></button>
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu-item"><a href="index.html">Главная</a></li>
+									<li class="menu-item dropdown">
+										<a href="about.html">О компании</a>
+										<ul class="dropdown__menu" hidden>
+											<li class="menu-item"><a href="#">Реквизиты</a></li>
+											<li class="menu-item"><a href="#">Структура</a></li>
+											<li class="menu-item"><a href="#">История</a></li>
+											<li class="menu-item"><a href="#">Миссия и ценности</a></li>
+											<li class="menu-item"><a href="#">Кадровая политика</a></li>
+											<li class="menu-item"><a href="#">Вакансии</a></li>
+											<li class="menu-item"><a href="#">Противодействие коррупции</a></li>
+											<li class="menu-item"><a href="#">Безопасность</a></li>
+											<li class="menu-item"><a href="#">Политика в области персональных данных</a>
+											</li>
+											<li class="menu-item"><a href="project-activities.html">Проектная
+													деятельность</a></li>
+											<li class="menu-item"><a href="#">Раскрытие информации</a></li>
+										</ul>
+									</li>
+									<li class="menu-item dropdown">
+										<a href="#">Медиа</a>
+										<ul class="dropdown__menu" hidden>
+											<li class="menu-item"><a href="news.html">Новости</a></li>
+											<li class="menu-item"><a href="media-gallery.html">Медиа галерея</a></li>
+											<li class="menu-item"><a href="#">Контакты для СМИ</a></li>
+										</ul>
+									</li>
+									<li class="menu-item dropdown">
+										<a href="branch.html">Филиалы</a>
+										<ul class="dropdown__menu" hidden>
+											<li class="menu-item"><a href="branch-page.html">АТЭС-Нововоронеж</a></li>
+											<li class="menu-item"><a href="branch-page.html">АТЭС-Десногорск</a></li>
+											<li class="menu-item"><a href="branch-page.html">АТЭС-Полярные зори</a></li>
+											<li class="menu-item"><a href="branch-page.html">АТЭС-Заречный</a></li>
+											<li class="menu-item"><a href="branch-page.html">АТЭС-Удомля</a></li>
+											<li class="menu-item"><a href="branch-page.html">АТЭС-Сосновый бор</a></li>
+										</ul>
+									</li>
+									<li class="menu-item"><a href="consumer.html">Потребителям</a></li>
+									<li class="menu-item"><a href="#">Поставщикам</a></li>
+									<li class="menu-item"><a href="contact.html">Контакты</a></li>
+								</ul>
+							</nav>
+						</div>
+
+						<div class="rs-header__search search">
+							<div class="search__block search-modal">
+								<div class="search__wrapper">
+									<form action="#" class="search__form">
+										<div class="search__line">
+											<div class="search__field">
+												<input type="text" placeholder="Напишите, что хотите найти"
+													class="search__input" required>
+												<button class="search__btn search__clear" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+														<path d="M1 1.25885L9.84163 10.1005L18 18.2588" stroke="#D3D3D3"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+														<path d="M19 1.25885L10.1584 10.1005L2 18.2588" stroke="#D3D3D3"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+											<button class="search__btn search__submit" type="submit">
+												<svg width="24" height="25" viewBox="0 0 24 25" fill="none">
+													<path
+														d="M11 6.75885C13.7614 6.75885 16 8.99743 16 11.7589M16.6588 17.4138L21 21.7589M19 11.7589C19 16.1771 15.4183 19.7589 11 19.7589C6.58172 19.7589 3 16.1771 3 11.7589C3 7.34057 6.58172 3.75885 11 3.75885C15.4183 3.75885 19 7.34057 19 11.7589Z"
+														stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+
+							<a href="#" class="search-show">
+								<svg width="24" height="25" viewBox="0 0 24 25" fill="none">
+									<path
+										d="M11 6.75879C13.7614 6.75879 16 8.99737 16 11.7588M16.6588 17.4137L21 21.7588M19 11.7588C19 16.1771 15.4183 19.7588 11 19.7588C6.58172 19.7588 3 16.1771 3 11.7588C3 7.34051 6.58172 3.75879 11 3.75879C15.4183 3.75879 19 7.34051 19 11.7588Z"
+										stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+									<path d="M1 1.25885L9.84163 10.1005L18 18.2588" stroke="#D3D3D3" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M19 1.25885L10.1584 10.1005L2 18.2588" stroke="#D3D3D3" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</a>
+						</div>
+
+						<div class="rs-header__login">
+							<a href="#" class="_rs-icon-user">Вход в личный кабинет</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+
+			<link rel="stylesheet" href="css/rs-banner.css">
+			<section class="rs-banner">
+				<div class="rs-banner__bg">
+					<img src="./img/footer/footer__bg.svg" alt="">
+				</div>
+				<div class="rs-banner__container">
+					<div class="rs-banner__body">
+						<h1 class="rst-b-60">Контакты </h1>
+
+						<div class="rs-breadcrumbs">
+							<nav class="rs-breadcrumbs__navigation">
+								<ul itemscope itemtype="http://schema.org/BreadcrumbList" class="rs-breadcrumbs__list">
+									<li class="rs-breadcrumbs__item" itemprop="itemListElement" itemscope
+										itemtype="http://schema.org/ListItem">
+										<a class="rs-breadcrumbs__link" href="index.html" itemprop="item"
+											typeof="WebPage">
+											<span itemprop="name">Главная</span>
+										</a>
+										<meta itemprop="position" content="1">
+									</li>
+									<li class="rs-breadcrumbs__item" itemprop="itemListElement" itemscope=""
+										itemtype="http://schema.org/ListItem">
+										<span itemprop="name">Контакты </span>
+										<meta itemprop="position" content="2">
+									</li>
+								</ul>
+							</nav>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<link rel="stylesheet" href="css/rs-contact.css">
+			<section class="rs-contact">
+				<div class="rs-contact__container">
+					<div class="rs-contact__wrapper">
+						<div data-spollers="991.98, max" data-one-spoller class="rs-contact__spollers">
+							<div class="rs-contact__spollers_item">
+								<div class="rs-contact__spollers_head">
+									<h6 class="rst-l-16">Центральный аппарат</h6>
+									<h5 class="rst-r-20">ООО «АТЭС»</h5>
+								</div>
+								<button type="button" data-spoller
+									class="rs-contact__spollers_title _rs-icon-chevron-bottom">Контакты</button>
+								<div class="rs-contact__spollers_body">
+									<ul>
+										<li>
+											<span>Адрес</span>
+											115054, г. Москва, вн.тер.г. муниципальный округ
+											Замоскворечье, ул. Щипок,
+											д. 22, стр. 1, пом. 1П
+										</li>
+										<li>
+											<span>Телефон</span>
+											<a href="tel:74951978434">+7 (495) 197-84-34 (доб. 700)</a>
+										</li>
+										<li>
+											<span>Почта</span>
+											<a href="mailto:info@atomtes.ru">info@atomtes.ru</a>
+										</li>
+										<li>
+											<span>ВКонтакте</span>
+											<a href="https://vk.com/nvates">https://vk.com/nvates</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="rs-contact__spollers_item">
+								<div class="rs-contact__spollers_head">
+									<h6 class="rst-l-16">Филиал</h6>
+									<h5 class="rst-r-20">ООО «АТЭС - Нововоронеж»</h5>
+								</div>
+								<button type="button" data-spoller
+									class="rs-contact__spollers_title _rs-icon-chevron-bottom">Контакты</button>
+								<div class="rs-contact__spollers_body">
+									<ul>
+										<li>
+											<span>Адрес</span>
+											396073, Воронежская обл.,
+											г. Нововоронеж, Заводской проезд, д. 1
+										</li>
+										<li>
+											<span>Телефон</span>
+											<a href="tel:74736453541">+7 (47364) 5-35-41</a>
+										</li>
+										<li>
+											<span>Почта</span>
+											<a href="mailto:info_nv@atomtes.ru">info_nv@atomtes.ru</a>
+										</li>
+										<li>
+											<span>ВКонтакте</span>
+											<a href="https://vk.com/nvates">https://vk.com/nvates</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="rs-contact__spollers_item">
+								<div class="rs-contact__spollers_head">
+									<h6 class="rst-l-16">Филиал</h6>
+									<h5 class="rst-r-20">«АТЭС-Десногорск»</h5>
+								</div>
+								<button type="button" data-spoller
+									class="rs-contact__spollers_title _rs-icon-chevron-bottom">Контакты</button>
+								<div class="rs-contact__spollers_body">
+									<ul>
+										<li>
+											<span>Адрес</span>
+											216400, Смоленская обл., г. Десногорск, 3-й микрорайон Промзона Хлебозавод,
+											д. 1Б
+										</li>
+										<li>
+											<span>Телефон</span>
+											<a href="tel:74815378881">+7 (48153) 7-88-81</a>
+										</li>
+										<li>
+											<span>Почта</span>
+											<a href="mailto:Info_ds@atomtes.ru">Info_ds@atomtes.ru</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="rs-contact__spollers_item">
+								<div class="rs-contact__spollers_head">
+									<h6 class="rst-l-16">Филиал</h6>
+									<h5 class="rst-r-20">«АТЭС-Полярные Зори»</h5>
+								</div>
+								<button type="button" data-spoller
+									class="rs-contact__spollers_title _rs-icon-chevron-bottom">Контакты</button>
+								<div class="rs-contact__spollers_body">
+									<ul>
+										<li>
+											<span>Адрес</span>
+											184230, Мурманская обл., г. Полярные Зори, ул. Строителей,
+											д. 8В
+										</li>
+										<li>
+											<span>Телефон</span>
+											<a href="tel:78153274494">+7 (81532) 7-44-94</a>
+										</li>
+										<li>
+											<span>Почта</span>
+											<a href="mailto:info_pz@atomtes.ru">info_pz@atomtes.ru</a>
+										</li>
+										<li>
+											<span>ВКонтакте</span>
+											<a href="https://vk.com/public180366921">https://vk.com/public180366921</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="rs-contact__spollers_item">
+								<div class="rs-contact__spollers_head">
+									<h6 class="rst-l-16">Филиал</h6>
+									<h5 class="rst-r-20">«АТЭС-Заречный»</h5>
+								</div>
+								<button type="button" data-spoller
+									class="rs-contact__spollers_title _rs-icon-chevron-bottom">Контакты</button>
+								<div class="rs-contact__spollers_body">
+									<ul>
+										<li>
+											<span>Адрес</span>
+											624251, Свердловская обл., г. Заречный, ул. Комсомольская, д. 12
+										</li>
+										<li>
+											<span>Телефон</span>
+											<a href="tel:73437771851">+7 (34377) 7-18-51</a>
+										</li>
+										<li>
+											<span>Почта</span>
+											<a href="mailto:info_zar@atomtes.ru">info_zar@atomtes.ru</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="rs-contact__spollers_item">
+								<div class="rs-contact__spollers_head">
+									<h6 class="rst-l-16">Филиал</h6>
+									<h5 class="rst-r-20">«АТЭС-Удомля»</h5>
+								</div>
+								<button type="button" data-spoller
+									class="rs-contact__spollers_title _rs-icon-chevron-bottom">Контакты</button>
+								<div class="rs-contact__spollers_body">
+									<ul>
+										<li>
+											<span>Адрес</span>
+											171841, Тверская обл., г. Удомля,
+											ул. Зелёная, д. 14
+										</li>
+										<li>
+											<span>Телефон</span>
+											<a href="tel:74825540007">+7 (48255) 4-00-07</a>
+										</li>
+										<li>
+											<span>Почта</span>
+											<a href="mailto:info_ud@atomtes.ru">info_ud@atomtes.ru</a>
+										</li>
+										<li>
+											<span>ВКонтакте</span>
+											<a href="https://vk.com/ates_udomlya">https://vk.com/ates_udomlya</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="rs-contact__spollers_item">
+								<div class="rs-contact__spollers_head">
+									<h6 class="rst-l-16">Филиал</h6>
+									<h5 class="rst-r-20">«АТЭС-Сосновый Бор»</h5>
+								</div>
+								<button type="button" data-spoller
+									class="rs-contact__spollers_title _rs-icon-chevron-bottom">Контакты</button>
+								<div class="rs-contact__spollers_body">
+									<ul>
+										<li>
+											<span>Адрес</span>
+											188540, Ленинградская обл., г.о. Сосновоборский, г. Сосновый Бор, ул.
+											Комсомольская, д. 22
+										</li>
+										<li>
+											<span>Телефон</span>
+											<a href="tel:78136954215">+7 (81369) 5-42-15</a>
+										</li>
+										<li>
+											<span>Почта</span>
+											<a href="mailto:info_sbor@atomtes.ru">info_sbor@atomtes.ru</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<link rel="stylesheet" href="css/rs-location.css">
+			<script src="js/rs-location.js" defer></script>
+			<section class="rs-location">
+				<div class="rs-location__container">
+					<div class="section-header" data-aos="fade-up" data-aos-delay="100">
+						<h2 class="rst-r-25">География присутствия</h2>
+					</div>
+					<div class="rs-location__map map" id="map" data-aos="fade-up" data-aos-delay="200"></div>
+				</div>
+			</section>
+
+		</main>
+
+		<link rel="stylesheet" href="css/rs-footer.css">
+		<footer>
+			<div class="rs-footer">
+				<div class="rs-footer__bg">
+					<img src="./img/footer/footer__bg.svg" alt="">
+				</div>
+				<div class="rs-footer__container">
+					<div class="rs-footer__wrapper">
+						<div class="rs-footer__block">
+							<div class="rs-footer__logo">
+								<img src="./img/footer/logo_white.svg" alt="">
+							</div>
+							<a href="#" class="rs-btn _btn-white">Отправить сообщение</a>
+						</div>
+						<div class="rs-footer__info">
+							<div data-spollers="991.98, max" data-one-spoller class="rs-footer__spollers">
+								<div class="rs-footer__spollers_item">
+									<button type="button" data-spoller
+										class="rs-footer__spollers_title _spoller-active">
+										О компании
+									</button>
+									<div class="rs-footer__spollers_body">
+										<div class="rs-footer__menu menu">
+											<nav class="menu__body">
+												<ul class="menu__list">
+													<li class="menu-item"><a href="#">Реквизиты</a></li>
+													<li class="menu-item"><a href="#">Структура</a></li>
+													<li class="menu-item"><a href="#">История</a></li>
+													<li class="menu-item"><a href="#">Миссия и ценности</a></li>
+													<li class="menu-item"><a href="#">Кадровая политика</a></li>
+													<li class="menu-item"><a href="#">Противодействие коррупции</a></li>
+													<li class="menu-item"><a href="#">Безопасность</a></li>
+													<li class="menu-item"><a href="#">Политика в области персональных
+															данных</a></li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+
+								<div class="rs-footer__spollers_item">
+									<button type="button" data-spoller class="rs-footer__spollers_title">
+										Филиалы
+									</button>
+									<div class="rs-footer__spollers_body">
+										<div class="rs-footer__menu menu">
+											<nav class="menu__body">
+												<ul class="menu__list">
+													<li class="menu-item"><a href="branch-page.html">Нововоронеж</a>
+													</li>
+													<li class="menu-item"><a href="branch-page.html">Десногорск</a></li>
+													<li class="menu-item"><a href="branch-page.html">Полярные зори</a>
+													</li>
+													<li class="menu-item"><a href="branch-page.html">Заречный</a></li>
+													<li class="menu-item"><a href="branch-page.html">Удомля</a></li>
+													<li class="menu-item"><a href="branch-page.html">Сосновый бор</a>
+													</li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+
+								<div class="rs-footer__spollers_item">
+									<button type="button" data-spoller class="rs-footer__spollers_title">
+										Меню сайта
+									</button>
+									<div class="rs-footer__spollers_body">
+										<div class="rs-footer__menu menu">
+											<nav class="menu__body">
+												<ul class="menu__list">
+													<li class="menu-item"><a href="index.html">Главная</a></li>
+													<li class="menu-item"><a href="news.html">Новости</a></li>
+													<li class="menu-item"><a href="media-gallery.html">Медиа галерея</a>
+													</li>
+													<li class="menu-item"><a href="#">Контакты для СМИ</a></li>
+													<li class="menu-item"><a href="#">Вакансии</a></li>
+													<li class="menu-item"><a href="consumer.html">Потребителям</a></li>
+													<li class="menu-item"><a href="contact.html">Контакты</a></li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="rs-footer__bottom">
+						<div class="rs-footer__copyright">© ООО «АтомТеплоЭлектроСеть» 2023. Все права защищены.</div>
+						<div class="rs-footer__source">
+							Источник фото:
+							<a href="http://reastock.ritori.ru/">http://reastock.ritori.ru/</a>
+						</div>
+						<div class="rs-footer__dev"><a href="#">Разработано в Россайт</a></div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script src="https://unpkg.com/lightgallery@2.4.0/lightgallery.min.js"></script>
+	<script src="https://unpkg.com/lightgallery@2.4.0/plugins/zoom/lg-zoom.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
+	<script>SmoothScroll({ animationTime: 800, stepSize: 100, accelerationDelta: 50, accelerationMax: 3, touchpadSupport: false, });</script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>AOS.init({ duration: 500, easing: 'ease-out-quart', once: false });</script>
+	<script src="js/rs-script.js" type="module"></script>
+
+</body>
+
+</html>

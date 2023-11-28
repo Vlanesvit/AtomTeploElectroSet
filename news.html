@@ -174,7 +174,218 @@
 			<link rel="stylesheet" href="css/rs-news.css">
 			<section class="rs-news">
 				<div class="rs-news__container">
-					.rs-news
+					<div class="rs-news__filters">
+						<h5 class="rst-r-20">Фильтры</h5>
+
+						<button type="button" class="rs-news__filter_btn _rs-icon-filter"></button>
+
+						<div class="rs-news__filter_body">
+							<div class="rs-news__filter_wrapper">
+								<form action="#">
+									<div class="rs-news__filter_list" data-one-select>
+										<div class="rs-news__filter_item">
+											<!-- Скрипт переделывает селект в отдельный блок, см. rs-script.js
+											Если нужна дополнительно отправка формы после выбора, то добавь data-submit в select-->
+											<select name="form[]" class="custom-select" data-scroll data-show-selected
+												data-class-modif="one-select">
+												<option value="0" selected data-class="_select-selected">Направление
+												</option>
+												<option value="1">Росатом</option>
+												<option value="2">Партнерство</option>
+												<option value="3">Строительство</option>
+											</select>
+										</div>
+
+										<div class="rs-news__filter_item">
+											<select name="form[]" class="custom-select" data-scroll data-show-selected
+												data-class-modif="one-select">
+												<option value="0" selected data-class="_select-selected">Год публикации
+												</option>
+												<option value="1">2023</option>
+												<option value="2">2022</option>
+												<option value="3">2021</option>
+											</select>
+										</div>
+
+										<div class="rs-news__filter_item">
+											<select name="form[]" class="custom-select" data-scroll data-show-selected
+												data-class-modif="one-select">
+												<option value="0" selected data-class="_select-selected">Филиалы
+												</option>
+												<option value="1">АТЭС-Нововоронеж</option>
+												<option value="2">АТЭС-Десногорск</option>
+												<option value="3">АТЭС-Полярные зори</option>
+												<option value="4">АТЭС-Заречный</option>
+												<option value="5">АТЭС-Удомля</option>
+												<option value="6">АТЭС-Сосновый бор</option>
+											</select>
+										</div>
+									</div>
+								</form>
+								<a href="#" class="rs-news__filter_close">Сбросить фильтры</a>
+							</div>
+						</div>
+					</div>
+					<div class="rs-news__list">
+						<div class="rs-news__item" data-aos="fade-up" data-aos-delay="100">
+							<a href="news-page.html">
+								<div class="rs-news__date">
+									<div class="rs-news__date_day">11</div>
+									<div class="rs-news__date_month-year">
+										<span>Октября</span>
+										<span>2023</span>
+									</div>
+								</div>
+								<div class="rs-news__img">
+									<img src="./img/blocks/news/news_1.jpg" alt="">
+								</div>
+								<div class="rs-news__desc">
+									<div class="rs-news__body">
+										<div class="rs-news__date">11.10.2023</div>
+										<h3>Росатом и Российско-Кыргызский фонд развития подписали
+											соглашение о намерениях по реализации проекта по строительству
+											ветроэлектростанции</h3>
+										<p>Установленная мощность планируемой станции составит 100 МВт.</p>
+									</div>
+									<div class="rs-news__footer">
+										<ul class="rs-news__tag">
+											<li>Росатом</li>
+											<li>Партнерство</li>
+										</ul>
+										<span class="rs-link _rs-icon-chevron-right">Читать</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="rs-news__item" data-aos="fade-up" data-aos-delay="200">
+							<a href="news-page.html">
+								<div class="rs-news__date">
+									<div class="rs-news__date_day">12</div>
+									<div class="rs-news__date_month-year">
+										<span>Октября</span>
+										<span>2023</span>
+									</div>
+								</div>
+								<div class="rs-news__img">
+									<img src="./img/blocks/news/news_2.jpg" alt="">
+								</div>
+								<div class="rs-news__desc">
+									<div class="rs-news__body">
+										<div class="rs-news__date">12.10.2023</div>
+										<h3>Концерн «Росэнергоатом» и Санкт-Петербургская международная товарно-сырьевая
+											биржа подписали соглашение о развитии рынка торговли «зелеными»
+											сертификатами</h3>
+										<p>12 октября 2023 года в рамках Российской энергетической недели (РЭН) в Москве
+											генеральный директор АО «Концерн Росэнергоатом» Александр Шутиков и
+											президент Санкт-Петербургской международной товарно-сырьевой биржи Алексей
+											Рыбников подписали соглашение о взаимодействии в области торговли
+											сертификатами происхождения электроэнергии, выработанной с помощью
+											низкоуглеродных и возобновляемых источников.</p>
+									</div>
+									<div class="rs-news__footer">
+										<ul class="rs-news__tag">
+											<li>Росатом</li>
+											<li>АТЭС-Полярные зори</li>
+										</ul>
+										<span class="rs-link _rs-icon-chevron-right">Читать</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="rs-news__item" data-aos="fade-up" data-aos-delay="300">
+							<a href="news-page.html">
+								<div class="rs-news__date">
+									<div class="rs-news__date_day">13</div>
+									<div class="rs-news__date_month-year">
+										<span>Октября</span>
+										<span>2023</span>
+									</div>
+								</div>
+								<div class="rs-news__img">
+									<img src="./img/blocks/news/news_3.jpg" alt="">
+								</div>
+								<div class="rs-news__desc">
+									<div class="rs-news__body">
+										<div class="rs-news__date">13.10.2023</div>
+										<h3>В Иркутской области начался демонтаж последнего опасного производственного
+											объекта на площадке бывшего предприятия «Усольехимпром»</h3>
+										<p>Здание цеха по производству трихлорсилана и четыреххлористого кремния (цех
+											94) начали демонтировать на площадке бывшего предприятия ООО
+											«Усольехимпром».</p>
+									</div>
+									<div class="rs-news__footer">
+										<ul class="rs-news__tag">
+											<li>Партнерство</li>
+											<li>АТЭС-Заречный</li>
+										</ul>
+										<span class="rs-link _rs-icon-chevron-right">Читать</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="rs-news__item" data-aos="fade-up" data-aos-delay="400">
+							<a href="news-page.html">
+								<div class="rs-news__date">
+									<div class="rs-news__date_day">14</div>
+									<div class="rs-news__date_month-year">
+										<span>Октября</span>
+										<span>2023</span>
+									</div>
+								</div>
+								<div class="rs-news__img">
+									<img src="./img/blocks/news/news_4.jpg" alt="">
+								</div>
+								<div class="rs-news__desc">
+									<div class="rs-news__body">
+										<div class="rs-news__date">14.10.2023</div>
+										<h3>Топливный дивизион Росатома впервые поставил свежее ядерное топливо для
+											плавучей атомной теплоэлектростанции</h3>
+										<p>К первой в истории электростанции перегрузке топлива планируется приступить
+											до конца 2023 года. Топливный дивизион Госкорпорации «Росатом» (Топливная
+											компания Росатома «ТВЭЛ») поставила ядерное топливо для реакторной установки
+											№ 1.</p>
+									</div>
+									<div class="rs-news__footer">
+										<ul class="rs-news__tag">
+											<li>Строительство</li>
+											<li>АТЭС-Сосновый бор</li>
+										</ul>
+										<span class="rs-link _rs-icon-chevron-right">Читать</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="pagging">
+						<button type="button"
+							class="pagging__arrow pagging__arrow_start _rs-icon-pagination-left"></button>
+						<button type="button" class="pagging__arrow pagging__arrow_left _rs-icon-chevron-left"></button>
+						<ul class="pagging__list">
+							<li class="pagging__item">
+								<a href="#" class="pagging__link _active">1</a>
+							</li>
+							<li class="pagging__item">
+								<a href="#" class="pagging__link">2</a>
+							</li>
+							<li class="pagging__item">
+								<a href="#" class="pagging__link">3</a>
+							</li>
+							<li class="pagging__item">
+								<a href="#" class="pagging__link">3</a>
+							</li>
+							<li class="pagging__item">
+								<span class="pagging__more">...</span>
+							</li>
+							<li class="pagging__item">
+								<a href="#" class="pagging__link">10</a>
+							</li>
+						</ul>
+						<button type="button"
+							class="pagging__arrow pagging__arrow_end _rs-icon-pagination-right"></button>
+						<button type="button"
+							class="pagging__arrow pagging__arrow_right _rs-icon-chevron-right"></button>
+					</div>
 				</div>
 			</section>
 
