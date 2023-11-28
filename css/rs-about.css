@@ -1,0 +1,109 @@
+.rs-about {
+  margin: 110px 0px;
+}
+.rs-about__blocks {
+  margin-top: 50px;
+}
+.rs-about__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: -15px;
+}
+.rs-about__block:not(:last-child) {
+  margin-bottom: 95px;
+}
+.rs-about__desc {
+  width: 100%;
+  max-width: 705px;
+  margin: 15px;
+}
+.rs-about__desc > *:first-child {
+  margin-top: 0px;
+}
+.rs-about__desc > *:last-child {
+  margin-bottom: 0px;
+}
+.rs-about__desc h4 {
+  margin: 20px 0px;
+}
+.rs-about__desc p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 160%; /* 32px */
+  letter-spacing: 0.6px;
+  margin: 20px 0px;
+}
+.rs-about__desc blockquote {
+  background-color: var(--second-color);
+  padding: 30px 40px 30px 30px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 20px 0px;
+}
+.rs-about__desc blockquote img {
+  margin-left: 45px;
+}
+.rs-about__desc blockquote p {
+  margin: 0;
+}
+.rs-about__picture {
+  width: 100%;
+  height: 100%;
+  max-width: 770px;
+  position: relative;
+  margin: 15px;
+}
+.rs-about__img {
+  width: 100%;
+  height: 100%;
+}
+.rs-about__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.rs-about__label {
+  position: absolute;
+  bottom: 20px;
+  right: 7px;
+  padding: 21px 32px 20px 24px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(8.5px);
+          backdrop-filter: blur(8.5px);
+  color: #fff;
+}
+.rs-about__number {
+  margin-bottom: 8px;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 37px;
+  letter-spacing: 1.35px;
+}
+.rs-about__number span {
+  font-size: 60px;
+  letter-spacing: 1.8px;
+}
+.rs-about__subtitle {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 120%; /* 21.6px */
+  letter-spacing: 0.54px;
+}

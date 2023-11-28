@@ -10,17 +10,18 @@
 
 // Парамерты по умолчанию ==============================================================================================================================================================================================================================================================================
 // Шрифт и размер
-$fontFamily: "Manrope", sans-serif;
+$fontFamily: "Rosatom", sans-serif;
 $fontSize: 14px;
 
 // Основные цвета
 :root {
 	--bg-color: #fff;
 	--font-color: #333;
-
+	--border-color: #d3d3d3;
 	--primary-color: #025ea1;
 	--second-color: #eff8ff;
 	--tertiary-color: #6cace4;
+	--dark-blue: #003274;
 	--primary-gradient: linear-gradient(106deg, #025ea1 1.4%, #1773b6 100%);
 	--second-gradient: linear-gradient(286deg, rgba(239, 248, 255, 0.29) 0%, #eff8ff 100%);
 }
@@ -106,7 +107,7 @@ body {
 // Подключение стилей отдельных элементов ======================================================================================================================================================================================================================
 @import "./base/_common";
 @import "./base/_swiper";
-// @import "./base/_breadcrumbs";
+@import "./base/_breadcrumbs";
 // @import "./base/_modal";
 // @import "./base/_datepicker";
 // @import "./base/_light-gallery";

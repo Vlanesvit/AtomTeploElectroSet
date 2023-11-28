@@ -6,10 +6,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=, initial-scale=1.0">
 	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=38863ba5-9462-46dc-940c-d9fed985abff&lang=ru_RU"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.2.0/swiper-bundle.css" />
 	<link rel="stylesheet" href="https://unpkg.com/lightgallery@2.4.0/css/lightgallery-bundle.min.css">
 	<link rel="stylesheet" href="https://unpkg.com/lightgallery@2.4.0/css/lg-zoom.css">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 	<link rel="stylesheet" href="css/rs-style.css">
 	<title>Главная - ООО «АтомТеплоЭлектроСеть»</title>
 </head>
@@ -22,6 +23,7 @@
 		<script src="js/rs-header.js" defer></script>
 		<header>
 			<div class="rs-header">
+				<div class="rs-header__line"></div>
 				<div class="rs-header__container">
 					<div class="rs-header__wrapper">
 						<div class="rs-header__logo">
@@ -32,7 +34,7 @@
 						</div>
 
 						<div class="rs-header__menu menu">
-							<button type="button" class="menu__icon icon-menu"><span></span></button>
+							<button type="button" class="menu__icon icon-menu"><span></span><span></span></button>
 							<nav class="menu__body">
 								<ul class="menu__list">
 									<li class="menu-item"><a href="index.html">Главная</a></li>
@@ -80,12 +82,48 @@
 							</nav>
 						</div>
 
-						<div class="rs-header__search">
-							<a href="#" class="search-btn search-show">
+						<div class="rs-header__search search">
+							<div class="search__block search-modal">
+								<div class="search__wrapper">
+									<form action="#" class="search__form">
+										<div class="search__line">
+											<div class="search__field">
+												<input type="text" placeholder="Напишите, что хотите найти"
+													class="search__input" required>
+												<button class="search__btn search__clear" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+														<path d="M1 1.25885L9.84163 10.1005L18 18.2588" stroke="#D3D3D3"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+														<path d="M19 1.25885L10.1584 10.1005L2 18.2588" stroke="#D3D3D3"
+															stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+											<button class="search__btn search__submit" type="submit">
+												<svg width="24" height="25" viewBox="0 0 24 25" fill="none">
+													<path
+														d="M11 6.75885C13.7614 6.75885 16 8.99743 16 11.7589M16.6588 17.4138L21 21.7589M19 11.7589C19 16.1771 15.4183 19.7589 11 19.7589C6.58172 19.7589 3 16.1771 3 11.7589C3 7.34057 6.58172 3.75885 11 3.75885C15.4183 3.75885 19 7.34057 19 11.7589Z"
+														stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+
+							<a href="#" class="search-show">
 								<svg width="24" height="25" viewBox="0 0 24 25" fill="none">
 									<path
 										d="M11 6.75879C13.7614 6.75879 16 8.99737 16 11.7588M16.6588 17.4137L21 21.7588M19 11.7588C19 16.1771 15.4183 19.7588 11 19.7588C6.58172 19.7588 3 16.1771 3 11.7588C3 7.34051 6.58172 3.75879 11 3.75879C15.4183 3.75879 19 7.34051 19 11.7588Z"
 										stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+									<path d="M1 1.25885L9.84163 10.1005L18 18.2588" stroke="#D3D3D3" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M19 1.25885L10.1584 10.1005L2 18.2588" stroke="#D3D3D3" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round" />
 								</svg>
 							</a>
 						</div>
@@ -157,27 +195,33 @@
 							</div>
 						</div>
 					</div>
-					<div class="rs-slider__fraction"></div>
-					<div class="rs-slider__pagination swiper-pagination"></div>
+					<div class="rs-slider__control">
+						<div class="rs-slider__fraction">
+							<div class="rs-slider__fraction-count">1</div>
+							/
+							<div class="rs-slider__fraction-total">3</div>
+						</div>
+						<div class="rs-slider__pagination swiper-pagination"></div>
+					</div>
 				</div>
 			</section>
 
 			<link rel="stylesheet" href="css/rs-news.css">
 			<section class="rs-news">
 				<div class="rs-news__container">
-					<div class="section-header">
+					<div class="section-header" data-aos="fade-up" data-aos-delay="100">
 						<h2 class="rst-r-25">Новости</h2>
 					</div>
 					<div class="rs-news__list">
-						<div class="rs-news__item">
+						<div class="rs-news__item" data-aos="fade-up" data-aos-delay="100">
 							<a href="news-page.html">
 								<div class="rs-news__img">
 									<img src="./img/blocks/news/news_1.jpg" alt="">
 								</div>
 								<div class="rs-news__desc">
 									<div class="rs-news__body">
-										<div class="rst-l-20 rs-news__date">12.10.2023</div>
-										<h3 class="rst-r-30">Росатом и Российско-Кыргызский фонд развития подписали
+										<div class="rs-news__date">12.10.2023</div>
+										<h3>Росатом и Российско-Кыргызский фонд развития подписали
 											соглашение о намерениях по реализации проекта по строительству
 											ветроэлектростанции</h3>
 									</div>
@@ -188,15 +232,15 @@
 								</div>
 							</a>
 						</div>
-						<div class="rs-news__item">
+						<div class="rs-news__item" data-aos="fade-up" data-aos-delay="200">
 							<a href="news-page.html">
 								<div class="rs-news__img">
 									<img src="./img/blocks/news/news_2.jpg" alt="">
 								</div>
 								<div class="rs-news__desc">
 									<div class="rs-news__body">
-										<div class="rst-l-20 rs-news__date">12.10.2023</div>
-										<h3 class="rst-r-30">Концерн «Росэнергоатом» и Санкт-Петербургская международная
+										<div class="rs-news__date">12.10.2023</div>
+										<h3>Концерн «Росэнергоатом» и Санкт-Петербургская международная
 											товарно-сырьевая биржа подписали соглашение о развитии рынка торговли
 											«зелеными» сертификатами</h3>
 									</div>
@@ -207,15 +251,15 @@
 								</div>
 							</a>
 						</div>
-						<div class="rs-news__item">
+						<div class="rs-news__item" data-aos="fade-up" data-aos-delay="300">
 							<a href="news-page.html">
 								<div class="rs-news__img">
 									<img src="./img/blocks/news/news_3.jpg" alt="">
 								</div>
 								<div class="rs-news__desc">
 									<div class="rs-news__body">
-										<div class="rst-l-20 rs-news__date">12.10.2023</div>
-										<h3 class="rst-r-30">В Иркутской области начался демонтаж последнего опасного
+										<div class="rs-news__date">12.10.2023</div>
+										<h3>В Иркутской области начался демонтаж последнего опасного
 											производственного объекта на площадке бывшего предприятия «Усольехимпром»
 										</h3>
 									</div>
@@ -226,15 +270,15 @@
 								</div>
 							</a>
 						</div>
-						<div class="rs-news__item">
+						<div class="rs-news__item" data-aos="fade-up" data-aos-delay="400">
 							<a href="news-page.html">
 								<div class="rs-news__img">
 									<img src="./img/blocks/news/news_4.jpg" alt="">
 								</div>
 								<div class="rs-news__desc">
 									<div class="rs-news__body">
-										<div class="rst-l-20 rs-news__date">12.10.2023</div>
-										<h3 class="rst-r-30">Топливный дивизион Росатома впервые поставил свежее ядерное
+										<div class="rs-news__date">12.10.2023</div>
+										<h3>Топливный дивизион Росатома впервые поставил свежее ядерное
 											топливо для плавучей атомной теплоэлектростанции</h3>
 									</div>
 									<ul class="rs-news__tag">
@@ -251,76 +295,77 @@
 			<link rel="stylesheet" href="css/rs-services.css">
 			<section class="rs-services">
 				<div class="rs-services__container">
-					<div class="section-header">
+					<div class="section-header" data-aos="fade-up" data-aos-delay="100">
 						<h2 class="rst-r-25">Направления деятельности </h2>
 					</div>
 					<div class="rs-services__list">
-						<div class="rs-services__item">
+						<div class="rs-services__item" data-aos="fade-up" data-aos-delay="100">
 							<div class="rs-services__img">
 								<img class="rs-services__img--desktop" src="./img/blocks/services/servise_1.svg" alt="">
 								<img class="rs-services__img--mobile" src="./img/blocks/services/servise_1_min.svg"
 									alt="">
 								<img class="rs-services__img--desktop--hover"
 									src="./img/blocks/services/servise_1--hover.svg" alt="">
-								<img class="rs-services__img--mobile--hover"
-									src="./img/blocks/services/servise_1_min__hover.svg" alt="">
 							</div>
 							<div class="rs-services__desc">
-								<h3 class="rst-r-32">Теплоснабжение</h3>
-								<p class="rst-l-18">Планирование, поставка и распределение тепла для обеспечения
-									комфортных условий в зданиях и сооружениях</p>
+								<div class="rs-services__body">
+									<h3 class="rst-r-32">Теплоснабжение</h3>
+									<p class="rst-l-18">Планирование, поставка и распределение тепла для обеспечения
+										комфортных условий в зданиях и сооружениях</p>
+								</div>
 							</div>
 						</div>
 
-						<div class="rs-services__item">
+						<div class="rs-services__item" data-aos="fade-up" data-aos-delay="200">
 							<div class="rs-services__img">
 								<img class="rs-services__img--desktop" src="./img/blocks/services/servise_2.svg" alt="">
 								<img class="rs-services__img--mobile" src="./img/blocks/services/servise_2_min.svg"
 									alt="">
 								<img class="rs-services__img--desktop--hover"
 									src="./img/blocks/services/servise_2--hover.svg" alt="">
-								<img class="rs-services__img--mobile--hover"
-									src="./img/blocks/services/servise_2_min__hover.svg" alt="">
 							</div>
 							<div class="rs-services__desc">
-								<h3 class="rst-r-32">Водоснабжение и водоотведение</h3>
-								<p class="rst-l-18">Обеспечение надежного и безопасного доступа к питьевой воде и
-									правильной утилизации сточных вод</p>
+								<div class="rs-services__body">
+									<h3 class="rst-r-32">Водоснабжение и водоотведение</h3>
+									<p class="rst-l-18">Обеспечение надежного и безопасного доступа к питьевой воде и
+										правильной утилизации сточных вод</p>
+								</div>
 							</div>
 						</div>
 
-						<div class="rs-services__item">
+						<div class="rs-services__item" data-aos="fade-up" data-aos-delay="300">
 							<div class="rs-services__img">
 								<img class="rs-services__img--desktop" src="./img/blocks/services/servise_3.svg" alt="">
 								<img class="rs-services__img--mobile" src="./img/blocks/services/servise_3_min.svg"
 									alt="">
 								<img class="rs-services__img--desktop--hover"
 									src="./img/blocks/services/servise_3--hover.svg" alt="">
-								<img class="rs-services__img--mobile--hover"
-									src="./img/blocks/services/servise_3_min__hover.svg" alt="">
 							</div>
 							<div class="rs-services__desc">
-								<h3 class="rst-r-32">Эксплуатация инженерной инфраструктуры</h3>
-								<p class="rst-l-18">Обслуживание и управление системами энергоснабжения, водоснабжения,
-									канализации и другими инженерными системами</p>
+								<div class="rs-services__body">
+									<h3 class="rst-r-32">Эксплуатация инженерной инфраструктуры</h3>
+									<p class="rst-l-18">Обслуживание и управление системами энергоснабжения,
+										водоснабжения, канализации и другими инженерными системами</p>
+								</div>
 							</div>
 						</div>
 
-						<div class="rs-services__item">
+						<div class="rs-services__item" data-aos="fade-up" data-aos-delay="400">
 							<div class="rs-services__img">
 								<img class="rs-services__img--desktop" src="./img/blocks/services/servise_4.svg" alt="">
 								<img class="rs-services__img--mobile" src="./img/blocks/services/servise_4_min.svg"
 									alt="">
 								<img class="rs-services__img--desktop--hover"
 									src="./img/blocks/services/servise_4--hover.svg" alt="">
-								<img class="rs-services__img--mobile--hover"
-									src="./img/blocks/services/servise_4_min__hover.svg" alt="">
 							</div>
 							<div class="rs-services__desc">
-								<h3 class="rst-r-32">Проектная деятельность
-									и инжиниринг, развитие коммунальных систем</h3>
-								<p class="rst-l-18">Разработка проектов, инжиниринговая поддержка и совершенствование
-									коммунальных систем с учетом энергоэффективности и экологических требований</p>
+								<div class="rs-services__body">
+									<h3 class="rst-r-32">Проектная деятельность
+										и инжиниринг, развитие коммунальных систем</h3>
+									<p class="rst-l-18">Разработка проектов, инжиниринговая поддержка и
+										совершенствование коммунальных систем с учетом энергоэффективности и
+										экологических требований</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -330,15 +375,15 @@
 			<link rel="stylesheet" href="css/rs-about.css">
 			<section class="rs-about">
 				<div class="rs-about__container">
-					<div class="section-header">
+					<div class="section-header" data-aos="fade-up" data-aos-delay="100">
 						<h2 class="rst-r-25">О компании</h2>
 						<a href="about.html" class="rs-link _rs-icon-chevron-right">Подробнее</a>
 					</div>
 					<div class="rs-about__blocks">
 						<div class="rs-about__block">
-							<div class="rs-about__desc">
-								<h2 class="rst-r-25">Общество с ограниченной ответственностью «АтомТеплоЭлектроСеть»
-									создано в 2010 году.</h2>
+							<div class="rs-about__desc" data-aos="fade-up" data-aos-delay="200">
+								<h4 class="rst-r-25">Общество с ограниченной ответственностью «АтомТеплоЭлектроСеть»
+									создано в 2010 году.</h4>
 								<p>ООО «АтомТеплоЭлектроСеть» входит в электроэнергетический дивизион Госкорпорации
 									«Росатом».</p>
 								<p>Основными видами деятельности ООО «АтомТеплоЭлектроСеть» являются производство,
@@ -347,29 +392,35 @@
 								<p>ООО «АтомТеплоЭлектроСеть» как специализированная энергетическая дочерняя компания АО
 									«Концерн Росэнергоатом» осуществляет свою деятельность силами шести филиалов.</p>
 							</div>
-							<div class="rs-about__picture">
+							<div class="rs-about__picture" data-aos="fade-up" data-aos-delay="300">
 								<div class="rs-about__img">
 									<img src="./img/blocks/about/about_1.jpg" alt="">
 								</div>
 								<div class="rs-about__label">
-									<div class="rs-about__number"><span>200 000</span> чел.</div>
+									<div class="rs-about__number">
+										<span data-digits-counter="200000">200 000</span>
+										чел.
+									</div>
 									<div class="rs-about__subtitle">Население городов присутствия</div>
 								</div>
 							</div>
 						</div>
 
 						<div class="rs-about__block">
-							<div class="rs-about__picture">
+							<div class="rs-about__picture" data-aos="fade-up" data-aos-delay="300">
 								<div class="rs-about__img">
-									<img src="./img/blocks/about/about_1.jpg" alt="">
+									<img src="./img/blocks/about/about_2.jpg" alt="">
 								</div>
 								<div class="rs-about__label">
-									<div class="rs-about__number"><span>>900</span></div>
+									<div class="rs-about__number">
+										<span>></span>
+										<span data-digits-counter="900">900</span>
+									</div>
 									<div class="rs-about__subtitle">квалифицированных специалистов</div>
 								</div>
 							</div>
-							<div class="rs-about__desc">
-								<h2 class="rst-r-25">Обеспечиваем качественную и безаварийную работу</h2>
+							<div class="rs-about__desc" data-aos="fade-up" data-aos-delay="200">
+								<h4 class="rst-r-25">Обеспечиваем качественную и безаварийную работу</h4>
 								<p>Общество осуществляет активную деятельность по внедрению новых технологий, внедрению
 									программ энергосбережения, оснащению потребителей приборами учета, выполнению работ
 									в рамках инвестиционных проектов по замене, ремонту, модернизации оборудования.</p>
@@ -389,10 +440,10 @@
 			<script src="js/rs-location.js" defer></script>
 			<section class="rs-location">
 				<div class="rs-location__container">
-					<div class="section-header">
+					<div class="section-header" data-aos="fade-up" data-aos-delay="100">
 						<h2 class="rst-r-25">География присутствия</h2>
 					</div>
-					<div class="rs-location__map map" id="map"></div>
+					<div class="rs-location__map map" id="map" data-aos="fade-up" data-aos-delay="200"></div>
 				</div>
 			</section>
 
@@ -413,7 +464,7 @@
 							<a href="#" class="rs-btn _btn-white">Отправить сообщение</a>
 						</div>
 						<div class="rs-footer__info">
-							<div data-spollers class="rs-footer__spollers">
+							<div data-spollers="991.98, max" data-one-spoller class="rs-footer__spollers">
 								<div class="rs-footer__spollers_item">
 									<button type="button" data-spoller
 										class="rs-footer__spollers_title _spoller-active">
@@ -502,26 +553,11 @@
 	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 	<script src="https://unpkg.com/lightgallery@2.4.0/lightgallery.min.js"></script>
 	<script src="https://unpkg.com/lightgallery@2.4.0/plugins/zoom/lg-zoom.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
-		type="text/javascript"></script>
-	<script>
-		SmoothScroll({
-			animationTime: 800, // [ms]
-			stepSize: 100, // [px]
-			accelerationDelta: 50,  // 50
-			accelerationMax: 3,   // 3
-			touchpadSupport: false,
-		}); 
-	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
+	<script>SmoothScroll({ animationTime: 800, stepSize: 100, accelerationDelta: 50, accelerationMax: 3, touchpadSupport: false, });</script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script>
-		AOS.init({
-			duration: 500,
-			easing: 'ease-out-quart',
-			once: false
-		});
-	</script>
-	<script src="js/rs-script.js"></script>
+	<script>AOS.init({ duration: 500, easing: 'ease-out-quart', once: false });</script>
+	<script src="js/rs-script.js" type="module"></script>
 
 </body>
 

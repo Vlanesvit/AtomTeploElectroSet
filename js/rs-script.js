@@ -42,6 +42,33 @@ function addLoadedClass() {
 addLoadedClass()
 
 /* ====================================
+Анимация чисел
+==================================== */
+import { CountUp } from '../lib/countUp.min.js';
+window.onload = function () {
+	let digitsCounters = document.querySelectorAll("[data-digits-counter]")
+	const options = {
+		// Скорость
+		duration: 2,
+		// Пробел для тысячных
+		separator: ' ',
+		// Прокрутка во вьюпорте
+		enableScrollSpy: true
+	};
+
+	if (digitsCounters.length) {
+		digitsCounters.forEach(digitsCounter => {
+			let demo = new CountUp(digitsCounter, digitsCounter.dataset.digitsCounter, options);
+			if (!demo.error) {
+				demo.start();
+			} else {
+				console.error(demo.error);
+			}
+		});
+	}
+}
+
+/* ====================================
 Спойлеры/аккордионы
 ==================================== */
 /*

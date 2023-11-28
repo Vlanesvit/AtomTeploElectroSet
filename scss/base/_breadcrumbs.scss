@@ -18,33 +18,34 @@
 
 	// .rs-breadcrumbs__item
 	&__item {
-		color: #9d9d9d;
-		font-size: 14px;
+		color: #fff;
+		font-size: 20px;
 		font-style: normal;
-		font-weight: 300;
-		line-height: 22px; /* 157.143% */
+		font-weight: 350;
+		line-height: normal;
+		letter-spacing: 0.6px;
 	}
 
 	// .rs-breadcrumbs__link
 	&__link {
 		transition: color 0.3s ease 0s;
-		color: #7d879c;
+		color: #fff;
 
 		&::after {
 			display: inline-block;
 			content: "—";
-			color: #9d9d9d;
-			margin: 0 5px;
+			color: #fff;
+			margin: 0 2px;
 		}
 
 		@media (any-hover: hover) {
 			&:hover {
-				color: var(--primary-color);
+				color: var(--tertiary-color);
 			}
 		}
 	}
 
 	&__current {
-		color: #9d9d9d;
+		color: #fff;
 	}
 }

@@ -1,0 +1,167 @@
+.rs-slider {
+  margin-top: 27px;
+  z-index: 5;
+  border-radius: 20px 20px 0px 0px;
+  overflow: hidden;
+  height: 100vh;
+  max-height: 708px;
+}
+.rs-slider::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  height: 20px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px 20px 0px 0px;
+  z-index: 10;
+}
+.rs-slider__slider {
+  height: 100%;
+  overflow: visible;
+}
+.rs-slider__slide.swiper-slide-active .rs-slider__body h1 {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+.rs-slider__slide.swiper-slide-active .rs-slider__body h5 {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: all 1s ease 0.3s;
+  transition: all 1s ease 0.3s;
+}
+.rs-slider__slide.swiper-slide-active .rs-slider__bg {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.rs-slider__bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transform-origin: top left;
+      -ms-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transition: all 10s ease 0s;
+  transition: all 10s ease 0s;
+}
+.rs-slider__bg::before, .rs-slider__bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.rs-slider__bg::before {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5.21%, rgba(0, 0, 0, 0.44)), color-stop(32.72%, rgba(0, 0, 0, 0)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.44) 5.21%, rgba(0, 0, 0, 0) 32.72%);
+}
+.rs-slider__bg::after {
+  top: -175px;
+  height: 1517px;
+  background: linear-gradient(343deg, rgba(0, 0, 0, 0.7) 52.93%, rgba(0, 0, 0, 0) 77.31%);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+.rs-slider__bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 991.98px) {
+  .rs-slider__bg img.rs-slider__bg--desktop {
+    display: none;
+  }
+}
+@media (min-width: 991.98px) {
+  .rs-slider__bg img.rs-slider__bg--mobile {
+    display: none;
+  }
+}
+.rs-slider__content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+.rs-slider__container {
+  height: 100%;
+}
+.rs-slider__body {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 147px 0px;
+  width: 100%;
+  max-width: 728px;
+  color: #fff;
+}
+.rs-slider__body h1 {
+  opacity: 0;
+  -webkit-transform: translateX(-50px);
+      -ms-transform: translateX(-50px);
+          transform: translateX(-50px);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.rs-slider__body h5 {
+  opacity: 0;
+  -webkit-transform: translateX(-50px);
+      -ms-transform: translateX(-50px);
+          transform: translateX(-50px);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.rs-slider__control {
+  position: absolute;
+  bottom: 95px;
+  z-index: 10;
+}
+@media (min-width: 991.98px) {
+  .rs-slider__control {
+    width: 100%;
+    max-width: 1610px;
+    padding-left: 20px;
+    padding-right: 20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+.rs-slider__fraction {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.54px;
+}
+.rs-slider__fraction-count {
+  color: #fff;
+}
