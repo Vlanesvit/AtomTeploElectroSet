@@ -78,7 +78,7 @@
 .rs-about__desc p {
   font-size: 20px;
   font-style: normal;
-  font-weight: 350;
+  font-weight: 300;
   line-height: 160%; /* 32px */
   letter-spacing: 0.6px;
   margin: 10px 0px;
@@ -253,7 +253,7 @@
 .rs-about__subtitle {
   font-size: 18px;
   font-style: normal;
-  font-weight: 350;
+  font-weight: 300;
   line-height: 120%; /* 21.6px */
   letter-spacing: 0.54px;
 }

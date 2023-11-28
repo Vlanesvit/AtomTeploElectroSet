@@ -591,7 +591,7 @@ body.aos-animate::after {
 .rst-l-18 {
   font-size: 18px;
   font-style: normal;
-  font-weight: 350;
+  font-weight: 300;
   line-height: normal;
   letter-spacing: 0.54px;
 }
@@ -1056,9 +1056,19 @@ textarea.rs-input {
   color: #fff;
   font-size: 20px;
   font-style: normal;
-  font-weight: 350;
+  font-weight: 300;
   line-height: normal;
   letter-spacing: 0.6px;
+}
+@media (max-width: 1439.98px) {
+  .rs-breadcrumbs__item {
+    font-size: 16px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-breadcrumbs__item {
+    font-size: 13px;
+  }
 }
 .rs-breadcrumbs__link {
   -webkit-transition: color 0.3s ease 0s;
