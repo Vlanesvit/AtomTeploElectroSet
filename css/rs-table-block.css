@@ -1,0 +1,101 @@
+.rs-table-block__content {
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+.rs-table-block__content table {
+  width: 100%;
+  border-collapse: 0px;
+  border-spacing: 0px;
+  table-layout: auto;
+}
+.rs-table-block__content table thead tr th {
+  padding: 24px 18px;
+  color: var(--primary-color);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-color: var(--second-color);
+  -moz-text-align-last: left;
+       text-align-last: left;
+  border-bottom: 1px solid var(--border-color);
+  vertical-align: top;
+}
+@media (max-width: 1439.98px) {
+  .rs-table-block__content table thead tr th {
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-table-block__content table thead tr th {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+.rs-table-block__content table thead tr th:first-child {
+  border-right: 1px solid var(--border-color);
+}
+@media (min-width: 1439.98px) {
+  .rs-table-block__content table thead tr th:first-child {
+    min-width: 159px;
+  }
+}
+.rs-table-block__content table tbody tr td {
+  padding: 24px 18px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  vertical-align: top;
+}
+@media (max-width: 1439.98px) {
+  .rs-table-block__content table tbody tr td {
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-table-block__content table tbody tr td {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+.rs-table-block__content table tbody tr td:first-child {
+  border-right: 1px solid var(--border-color);
+}
+@media (min-width: 1439.98px) {
+  .rs-table-block__content table tbody tr td:first-child {
+    min-width: 159px;
+  }
+}
+.rs-table-block__content table tbody tr:not(:nth-child(-n+7)) {
+  display: none;
+}
+.rs-table-block__content table tbody tr:not(:first-child) td {
+  border-top: 1px solid var(--border-color);
+}
+.rs-table-block__content table tbody tr:nth-child(2n) td {
+  background-color: var(--second-color);
+}
+.rs-table-block__more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+}
+@media (max-width: 1439.98px) {
+  .rs-table-block__more {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-table-block__more {
+    margin-top: 20px;
+  }
+}

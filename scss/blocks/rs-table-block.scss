@@ -1,0 +1,124 @@
+.rs-table-block {
+	// .rs-table-block__container
+	&__container {
+	}
+
+	// .rs-table-block__wrapper
+	&__wrapper {
+	}
+
+	// .rs-table-block__content
+	&__content {
+		border-radius: 10px;
+		border: 1px solid var(--border-color);
+		overflow: hidden;
+
+		table {
+			width: 100%;
+			border-collapse: 0px;
+			border-spacing: 0px;
+			table-layout: auto;
+
+			thead {
+				tr {
+					th {
+						padding: 24px 18px;
+						color: var(--primary-color);
+						font-size: 20px;
+						font-style: normal;
+						font-weight: 700;
+						line-height: normal;
+						background-color: var(--second-color);
+						text-align-last: left;
+						border-bottom: 1px solid var(--border-color);
+						// border-right: 1px solid var(--border-color);
+						// border-top: 1px solid var(--border-color);
+						vertical-align: top;
+
+						@media (max-width: 1439.98px) {
+							font-size: 16px;
+							padding: 15px 20px;
+						}
+						@media (max-width: 991.98px) {
+							font-size: 13px;
+							padding: 10px;
+						}
+
+						&:first-child {
+							// border-left: 1px solid var(--border-color);
+							border-right: 1px solid var(--border-color);
+
+							@media (min-width: 1439.98px) {
+								min-width: 159px;
+							}
+						}
+					}
+				}
+			}
+
+			tbody {
+				tr {
+					td {
+					    padding: 24px 18px;
+						font-size: 20px;
+						font-style: normal;
+						font-weight: 400;
+						line-height: normal;
+						// border-right: 1px solid var(--border-color);
+						vertical-align: top;
+
+						@media (max-width: 1439.98px) {
+							font-size: 16px;
+							padding: 15px 20px;
+						}
+						@media (max-width: 991.98px) {
+							font-size: 13px;
+							padding: 10px;
+						}
+
+						&:first-child {
+							// border-left: 1px solid var(--border-color);
+							border-right: 1px solid var(--border-color);
+
+							@media (min-width: 1439.98px) {
+								min-width: 159px;
+							}
+						}
+					}
+
+					&:not(:nth-child(-n + 7)) {
+						display: none;
+					}
+
+					&:not(:first-child) {
+						td {
+							border-top: 1px solid var(--border-color);
+						}
+					}
+
+					&:nth-child(2n) {
+						td {
+							background-color: var(--second-color);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// .rs-table-block__more
+	&__more {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		margin-top: 50px;
+
+		@media (max-width: 1439.98px) {
+			margin-top: 30px;
+		}
+
+		@media (max-width: 991.98px) {
+			margin-top: 20px;
+		}
+	}
+}
