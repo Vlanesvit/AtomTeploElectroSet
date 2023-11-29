@@ -1089,3 +1089,288 @@ textarea.rs-input {
 .rs-breadcrumbs__current {
   color: #fff;
 }
+
+.pagging {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 0px;
+}
+@media (max-width: 991.98px) {
+  .pagging {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 20px;
+  }
+}
+.pagging__arrow {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  min-width: 39px;
+  min-height: 39px;
+  max-width: 39px;
+  max-height: 39px;
+  border-radius: 5px;
+  border: 1.191px solid #f2f2f2;
+  background-color: #fff;
+  color: var(--primary-color);
+}
+.pagging__arrow::before {
+  color: inherit;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.pagging__arrow.pagging__arrow_left, .pagging__arrow.pagging__arrow_start {
+  margin-right: 6px;
+}
+.pagging__arrow.pagging__arrow_right, .pagging__arrow.pagging__arrow_end {
+  margin-left: 6px;
+}
+@media (any-hover: hover) {
+  .pagging__arrow:hover {
+    color: #fff;
+    background-color: var(--primary-color);
+  }
+}
+.pagging__arrow:disabled {
+  display: none;
+}
+.pagging__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pagging__item:not(:last-child) {
+  margin-right: 6px;
+}
+.pagging__link, .pagging__more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  text-align: center;
+  min-width: 39px;
+  min-height: 39px;
+  max-width: 39px;
+  max-height: 39px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 5px;
+  border: 1.191px solid #f2f2f2;
+  background-color: #fff;
+}
+.pagging__link._active {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+@media (any-hover: hover) {
+  .pagging__link:hover {
+    color: #fff;
+    background-color: var(--primary-color);
+  }
+}
+.pagging__more {
+  border: none;
+}
+
+.select {
+  position: relative;
+  width: 100%;
+}
+.select._select-error .select__title {
+  border-color: var(--primary-color);
+}
+.select._select-error .select__value {
+  color: var(--primary-color);
+}
+.select._select-error .select__value::before {
+  display: block;
+}
+.select__body {
+  position: relative;
+}
+.select__title {
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  background: #f5f5f5;
+  -webkit-backdrop-filter: blur(1.5px);
+          backdrop-filter: blur(1.5px);
+}
+.select__value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 20px;
+  color: var(--primary-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 1169.98px) {
+  .select__value {
+    font-size: 13px;
+  }
+}
+.select__value > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.select__value:after {
+  content: "\e900";
+  font-family: "icons" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 15px;
+          flex: 0 0 15px;
+  margin: 0px 0px 0px auto;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: inherit;
+  font-size: 15px;
+}
+._select-open .select__value:after {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+.select__value._select-pseudo-label::before {
+  content: attr(data-pseudo-label);
+  opacity: 0.5;
+}
+.select__content {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+.select__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.select__options {
+  position: absolute;
+  top: 100%;
+  min-width: 100%;
+  left: 0;
+  border-radius: 0px 0px 5px 5px;
+  background: #fff;
+  -webkit-box-shadow: 0px 50px 77px 0px rgba(47, 83, 117, 0.1);
+          box-shadow: 0px 50px 77px 0px rgba(47, 83, 117, 0.1);
+  padding: 20px;
+  z-index: 10;
+}
+.select__scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 400px;
+}
+.select__option {
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  color: inherit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+@media (max-width: 991.98px) {
+  .select__option {
+    font-size: 13px;
+  }
+}
+.select__option:first-child {
+  display: none;
+}
+.select__option:not(:last-child) {
+  margin-bottom: 15px;
+}
+@media (max-width: 1439.98px) {
+  .select__option:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+.select__option._select-selected {
+  color: var(--primary-color);
+}
+@media (any-hover: hover) {
+  .select__option:hover {
+    color: var(--primary-color);
+  }
+}
+.select__row {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.select._select-open {
+  z-index: 5;
+}
+
+._select-tag {
+  cursor: pointer;
+}

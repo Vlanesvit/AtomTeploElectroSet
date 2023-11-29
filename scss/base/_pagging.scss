@@ -2,10 +2,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	margin-top: 30px;
+	margin-top: 0px;
 
-	@media (max-width: 1439.98px) {
-		margin-top: 15px;
+	@media (max-width: 991.98px) {
+		justify-content: center;
+		margin-top: 20px;
 	}
 
 	// .pagging__arrow
@@ -15,48 +16,35 @@
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		padding: 12px;
-		color: #757575;
-		text-align: center;
-		font-variant-numeric: lining-nums proportional-nums;
-		font-size: 16px;
-		font-style: normal;
-		font-weight: 400;
-		line-height: 160%; /* 25.6px */
-
-		@media (max-width: 1439.98px) {
-			font-size: 13px;
-		}
+		min-width: 39px;
+		min-height: 39px;
+		max-width: 39px;
+		max-height: 39px;
+		border-radius: 5px;
+		border: 1.191px solid #f2f2f2;
+		background-color: #fff;
+		color: var(--primary-color);
 
 		&::before {
-			font-size: 15px;
+			color: inherit;
+			font-size: 19px;
 			transition: all 0.3s ease 0s;
+		}
+
+		&.pagging__arrow_left,
+		&.pagging__arrow_start {
+			margin-right: 6px;
+		}
+
+		&.pagging__arrow_right,
+		&.pagging__arrow_end {
+			margin-left: 6px;
 		}
 
 		@media (any-hover: hover) {
 			&:hover {
-				color: var(--primary-color);
-			}
-		}
-
-		&.pagging__arrow_left {
-			margin-right: 4px;
-			margin-left: 0px;
-
-			&::before {
-				margin-left: 0px;
-				margin-right: 3px;
-			}
-		}
-
-		&.pagging__arrow_right {
-			flex-direction: row-reverse;
-			margin-left: 4px;
-			margin-right: 0px;
-
-			&::before {
-				margin-left: 3px;
-				margin-right: 0px;
+				color: #fff;
+				background-color: var(--primary-color);
 			}
 		}
 
@@ -74,40 +62,32 @@
 	// .pagging__item
 	&__item {
 		&:not(:last-child) {
-			margin-right: 4px;
+			margin-right: 6px;
 		}
 	}
 
 	// .pagging__link
-	&__link {
+	&__link,
+	&__more {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		transition: all 0.3s ease 0s;
-		background-color: transparent;
-		color: #000;
 		text-align: center;
-		font-variant-numeric: lining-nums proportional-nums;
-		font-size: 16px;
+		min-width: 39px;
+		min-height: 39px;
+		max-width: 39px;
+		max-height: 39px;
+		font-size: 14px;
 		font-style: normal;
 		font-weight: 400;
-		line-height: 160%; /* 25.6px */
-		border-radius: 10px;
-		min-width: 48px;
-		min-height: 48px;
+		line-height: normal;
+		border-radius: 5px;
+		border: 1.191px solid #f2f2f2;
+		background-color: #fff;
+	}
 
-		@media (max-width: 1169.98px) {
-			font-size: 13px;
-			min-width: 40px;
-			min-height: 40px;
-		}
-
-		@media (max-width: 767.98px) {
-			min-width: 35px;
-			min-height: 35px;
-			font-size: 10px;
-		}
-
+	&__link {
 		&._active {
 			color: #fff;
 			background-color: var(--primary-color);
@@ -119,5 +99,9 @@
 				background-color: var(--primary-color);
 			}
 		}
+	}
+
+	&__more {
+		border: none;
 	}
 }
