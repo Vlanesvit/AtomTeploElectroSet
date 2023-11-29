@@ -1221,28 +1221,28 @@ function formFieldsInit(options = { viewPass: false, autoHeight: false }) {
 		}
 	}
 
-	const formLines = document.querySelectorAll('.form__line');
-	formLines.forEach(formLine => {
-		const formInput = formLine.querySelector('.rs-input')
-		const formClear = formLine.querySelector('.rs-input-clear')
-		formInput.addEventListener('input', function () {
-			if (formInput.value != '') {
-				formClear.style.display = "block";
-				formInput.parentElement.classList.add('_form-valid')
-			} else {
-				formClear.style.display = "none";
-				formInput.parentElement.classList.remove('_form-valid')
-			}
-		})
-		if (formClear) {
-			formClear.addEventListener('click', function () {
-				formInput.value = '';
-				formClear.style.display = "none";
-				formInput.parentElement.classList.remove('_form-valid')
-				formInput.focus()
-			})
-		}
-	});
+	// const formLines = document.querySelectorAll('.form__line');
+	// formLines.forEach(formLine => {
+	// 	const formInput = formLine.querySelector('.rs-input')
+	// 	const formClear = formLine.querySelector('.rs-input-clear')
+	// 	formInput.addEventListener('input', function () {
+	// 		if (formInput.value != '') {
+	// 			formClear.style.display = "block";
+	// 			formInput.parentElement.classList.add('_form-valid')
+	// 		} else {
+	// 			formClear.style.display = "none";
+	// 			formInput.parentElement.classList.remove('_form-valid')
+	// 		}
+	// 	})
+	// 	if (formClear) {
+	// 		formClear.addEventListener('click', function () {
+	// 			formInput.value = '';
+	// 			formClear.style.display = "none";
+	// 			formInput.parentElement.classList.remove('_form-valid')
+	// 			formInput.focus()
+	// 		})
+	// 	}
+	// });
 }
 // Валидация форм
 let formValidate = {

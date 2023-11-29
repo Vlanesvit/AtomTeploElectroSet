@@ -671,6 +671,22 @@ body.aos-animate::after {
     color: #fff;
   }
 }
+.rs-btn._btn-primary {
+  color: #fff;
+  background-color: var(--primary-color);
+  padding: 15px 30px;
+}
+@media (max-width: 991.98px) {
+  .rs-btn._btn-primary {
+    padding: 12px 20px;
+  }
+}
+@media (any-hover: hover) {
+  .rs-btn._btn-primary:hover {
+    background-color: var(--tertiary-color);
+    color: #fff;
+  }
+}
 
 .rs-link {
   position: relative;
@@ -734,19 +750,42 @@ body.aos-animate::after {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 0px -7.5px;
+    margin: 0px -10px;
   }
   .form__row .form__line {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 33.3333%;
             flex: 1 1 33.3333%;
-    padding: 0px 7.5px;
+    padding: 0px 10px;
   }
 }
 .form__line {
   width: 100%;
   position: relative;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
+}
+@media (max-width: 991.98px) {
+  .form__line {
+    margin-bottom: 10px;
+  }
+}
+.form__line .select__title {
+  background: var(--second-color);
+}
+.form__line .select__value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 16px;
+  color: var(--primary-color);
+}
+@media (max-width: 991.98px) {
+  .form__line .select__value {
+    padding: 15px 10px;
+  }
 }
 .form__error {
   margin-top: 5px;
@@ -781,16 +820,17 @@ body.aos-animate::after {
   }
 }
 .form__agreement {
+  color: #9b9b9b;
   font-size: 14px;
   font-style: normal;
-  font-weight: 250;
-  line-height: 130%; /* 18.2px */
+  font-weight: 350;
+  line-height: 150%; /* 21px */
   margin-right: 31px;
-  max-width: 420px;
+  max-width: 512px;
 }
 @media (max-width: 1439.98px) {
   .form__agreement {
-    margin-right: 16px;
+    margin-right: 15px;
   }
 }
 @media (max-width: 767.98px) {
@@ -812,8 +852,8 @@ body.aos-animate::after {
   }
 }
 .form__button {
-  min-width: 173px;
-  max-width: 173px;
+  min-width: 140px;
+  max-width: 140px;
 }
 @media (max-width: 767.98px) {
   .form__button {
@@ -832,34 +872,38 @@ body.aos-animate::after {
   transition: 0.3s ease 0s;
   -webkit-transition-property: background-color, border-color;
   transition-property: background-color, border-color;
-  border-radius: 50px;
-  border: 1px solid #ddd;
-  padding: 16px 24px;
-  color: #000;
-  font-size: 14px;
+  border-radius: 10px;
+  background: var(--second-color);
+  padding: 20px 16px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 250;
-  line-height: 18px; /* 128.571% */
+  font-weight: 350;
+  line-height: 24px; /* 150% */
+}
+@media (max-width: 991.98px) {
+  .rs-input {
+    padding: 15px 10px;
+    font-size: 13px;
+  }
 }
 .rs-input::-webkit-input-placeholder {
-  color: #7a7a7a;
+  color: #7b7b7b;
 }
 .rs-input::-moz-placeholder {
-  color: #7a7a7a;
+  color: #7b7b7b;
 }
 .rs-input:-ms-input-placeholder {
-  color: #7a7a7a;
+  color: #7b7b7b;
 }
 .rs-input::-ms-input-placeholder {
-  color: #7a7a7a;
+  color: #7b7b7b;
 }
 .rs-input::placeholder {
-  color: #7a7a7a;
+  color: #7b7b7b;
 }
 textarea.rs-input {
   resize: vertical;
-  min-height: 110px;
-  border-radius: 20px;
+  min-height: 190px;
 }
 
 .swiper {
@@ -978,12 +1022,6 @@ textarea.rs-input {
   position: relative;
   overflow: hidden;
 }
-@media (max-width: 991.98px) {
-  .swiper-pagination-bullet {
-    width: 6px;
-    height: 6px;
-  }
-}
 .swiper-pagination-bullet::after {
   content: "";
   position: absolute;
@@ -1057,7 +1095,7 @@ textarea.rs-input {
 @media (any-hover: hover) {
   .swiper-button-next:hover,
   .swiper-button-prev:hover {
-    color: var(--second-color);
+    color: var(--tertiary-color);
   }
 }
 .swiper-button-next:not(:last-child),
@@ -1228,8 +1266,6 @@ textarea.rs-input {
 .pagging__arrow::before {
   color: inherit;
   font-size: 19px;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
 }
 @media (max-width: 374.98px) {
   .pagging__arrow.pagging__arrow_start, .pagging__arrow.pagging__arrow_end {

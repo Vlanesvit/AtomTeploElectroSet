@@ -303,6 +303,23 @@ body {
 			}
 		}
 	}
+
+	&._btn-primary {
+		color: #fff;
+		background-color: var(--primary-color);
+		padding: 15px 30px;
+
+		@media (max-width: 991.98px) {
+			padding: 12px 20px;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: var(--tertiary-color);
+				color: #fff;
+			}
+		}
+	}
 }
 
 .rs-link {
@@ -359,11 +376,11 @@ body {
 		@media (min-width: 991.98px) {
 			display: flex;
 			justify-content: space-between;
-			margin: 0px -7.5px;
+			margin: 0px -10px;
 
 			.form__line {
 				flex: 1 1 33.3333%;
-				padding: 0px 7.5px;
+				padding: 0px 10px;
 			}
 		}
 	}
@@ -372,7 +389,11 @@ body {
 	&__line {
 		width: 100%;
 		position: relative;
-		margin-bottom: 18px;
+		margin-bottom: 20px;
+
+		@media (max-width: 991.98px) {
+			margin-bottom: 10px;
+		}
 
 		&._form-error {
 		}
@@ -384,6 +405,24 @@ body {
 		}
 
 		&._form-focus {
+		}
+
+		.select {
+			&__title {
+				background: var(--second-color);
+			}
+
+			// .select__value
+			&__value {
+				display: flex;
+				align-items: center;
+				padding: 20px 16px;
+				color: var(--primary-color);
+
+				@media (max-width: 991.98px) {
+					padding: 15px 10px;
+				}
+			}
 		}
 	}
 
@@ -412,15 +451,16 @@ body {
 
 	// .form__agreement
 	&__agreement {
+		color: #9b9b9b;
 		font-size: 14px;
 		font-style: normal;
-		font-weight: 250;
-		line-height: 130%; /* 18.2px */
+		font-weight: 350;
+		line-height: 150%; /* 21px */
 		margin-right: 31px;
-		max-width: 420px;
+		max-width: 512px;
 
 		@media (max-width: 1439.98px) {
-			margin-right: 16px;
+			margin-right: 15px;
 		}
 
 		@media (max-width: 767.98px) {
@@ -444,8 +484,8 @@ body {
 
 	// .form__button
 	&__button {
-		min-width: 173px;
-		max-width: 173px;
+		min-width: 140px;
+		max-width: 140px;
 
 		@media (max-width: 767.98px) {
 			min-width: 100%;
@@ -463,17 +503,21 @@ body {
 	width: 100%;
 	transition: 0.3s ease 0s;
 	transition-property: background-color, border-color;
-	border-radius: 50px;
-	border: 1px solid #ddd;
-	padding: 16px 24px;
-	color: #000;
-	font-size: 14px;
+	border-radius: 10px;
+	background: var(--second-color);
+	padding: 20px 16px;
+	font-size: 16px;
 	font-style: normal;
-	font-weight: 250;
-	line-height: 18px; /* 128.571% */
+	font-weight: 350;
+	line-height: 24px; /* 150% */
+
+	@media (max-width: 991.98px) {
+		padding: 15px 10px;
+		font-size: 13px;
+	}
 
 	&::placeholder {
-		color: #7a7a7a;
+		color: #7b7b7b;
 	}
 
 	&._form-focus {
@@ -488,8 +532,7 @@ body {
 
 textarea.rs-input {
 	resize: vertical;
-	min-height: 110px;
-	border-radius: 20px;
+	min-height: 190px;
 }
 
 // Block  ========================================================================================================================================================

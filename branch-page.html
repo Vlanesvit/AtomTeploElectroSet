@@ -184,7 +184,95 @@
 
 			<link rel="stylesheet" href="css/rs-leader.css">
 			<script src="js/rs-leader.js" defer></script>
-			<section class="rs-leader"></section>
+			<section class="rs-leader">
+				<div class="rs-leader__container">
+					<div class="rs-leader__wrapper">
+						<div class="rs-leader__title">
+							<h2 class="rst-r-25">Руководство филиала</h2>
+						</div>
+
+						<div class="rs-leader__blocks">
+							<div class="rs-leader__slider rs-leader__slider-1 swiper">
+								<div class="rs-leader__swiper swiper-wrapper">
+									<div class="rs-leader__slide swiper-slide">
+										<div class="rs-leader__photo">
+											<img src="./img/blocks/leader/leader-1.jpg" alt="">
+										</div>
+										<div class="rs-leader__description">
+											<h4 class="rst-r-25">Попов Владимир Валентинович</h4>
+											<h5 class="rst-l-20">Директор филиала «АТЭС-Нововоронеж»</h5>
+										</div>
+									</div>
+									<div class="rs-leader__slide swiper-slide">
+										<div class="rs-leader__photo">
+											<img src="./img/blocks/leader/leader-2.jpg" alt="">
+										</div>
+										<div class="rs-leader__description">
+											<h4 class="rst-r-25">Власов Евгений Анатольевич</h4>
+											<h5 class="rst-l-20">Главный инженер филиала «АТЭС-Нововоронеж»</h5>
+										</div>
+									</div>
+									<div class="rs-leader__slide swiper-slide">
+										<div class="rs-leader__photo">
+											<img src="./img/blocks/leader/leader-3.jpg" alt="">
+										</div>
+										<div class="rs-leader__description">
+											<h4 class="rst-r-25">Телегина Надежда Анатольевна</h4>
+											<h5 class="rst-l-20">Главный бухгалтер филиала «АТЭС-Нововоронеж»</h5>
+										</div>
+									</div>
+								</div>
+
+								<div class="rs-leader__control">
+									<div class="rs-leader__button-prev swiper-button-prev _rs-icon-chevron-left"></div>
+									<div class="rs-leader__pagination swiper-pagination"></div>
+									<div class="rs-leader__button-next swiper-button-next _rs-icon-chevron-right"></div>
+								</div>
+							</div>
+
+							<div class="rs-leader__slider rs-leader__slider-2 swiper">
+								<div class="rs-leader__swiper swiper-wrapper">
+									<div class="rs-leader__slide swiper-slide">
+										<div class="rs-leader__photo">
+											<img src="./img/blocks/leader/leader-1.jpg" alt="">
+										</div>
+									</div>
+									<div class="rs-leader__slide swiper-slide">
+										<div class="rs-leader__photo">
+											<img src="./img/blocks/leader/leader-2.jpg" alt="">
+										</div>
+									</div>
+									<div class="rs-leader__slide swiper-slide">
+										<div class="rs-leader__photo">
+											<img src="./img/blocks/leader/leader-3.jpg" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="rs-leader__slider rs-leader__slider-3 swiper">
+								<div class="rs-leader__swiper swiper-wrapper">
+									<div class="rs-leader__slide swiper-slide">
+										<div class="rs-leader__photo">
+											<img src="./img/blocks/leader/leader-1.jpg" alt="">
+										</div>
+									</div>
+									<div class="rs-leader__slide swiper-slide">
+										<div class="rs-leader__photo">
+											<img src="./img/blocks/leader/leader-2.jpg" alt="">
+										</div>
+									</div>
+									<div class="rs-leader__slide swiper-slide">
+										<div class="rs-leader__photo">
+											<img src="./img/blocks/leader/leader-3.jpg" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
 			<link rel="stylesheet" href="css/rs-slider-block.css">
 			<script src="js/rs-slider-block.js" defer></script>
@@ -521,7 +609,85 @@
 			</section>
 
 			<link rel="stylesheet" href="css/rs-feedback.css">
-			<section class="rs-feedback"></section>
+			<section class="rs-feedback">
+				<div class="rs-feedback__container">
+					<div class="section-header" data-aos="fade-up" data-aos-delay="100">
+						<h2 class="rst-r-25">Здесь вы можете задать любые интересующие вопросы</h2>
+					</div>
+					<div class="rs-feedback__wrapper">
+						<div class="rs-feedback__request">
+							<form action="#" class="form">
+								<div class="form__wrapper">
+									<div class="form__block">
+										<div class="form__line">
+											<input autocomplete="off" type="text" name="form[]"
+												data-error="Фамилия Имя Отчество" data-validate data-required required
+												placeholder="Фамилия Имя Отчество" class="rs-input">
+										</div>
+										<div class="form__row">
+											<div class="form__line">
+												<input autocomplete="off" type="tel" name="form[]" data-error="Телефон"
+													data-validate data-required required placeholder="Телефон"
+													class="rs-input">
+											</div>
+											<div class="form__line">
+												<input autocomplete="off" type="email" name="form[]" data-error="E-mail"
+													data-validate="email" data-required required placeholder="E-mail"
+													class="rs-input">
+											</div>
+										</div>
+										<div class="form__line">
+											<select name="form[]" class="custom-select" data-scroll data-show-selected
+												data-class-modif="one-select">
+												<option value="0" selected data-class="_select-selected">Выберите филиал
+												</option>
+												<option value="1">АТЭС-Нововоронеж</option>
+												<option value="2">АТЭС-Десногорск</option>
+												<option value="3">АТЭС-Полярные зори</option>
+												<option value="4">АТЭС-Заречный</option>
+												<option value="5">АТЭС-Удомля</option>
+												<option value="6">АТЭС-Сосновый бор</option>
+											</select>
+										</div>
+										<div class="form__line">
+											<textarea autocomplete="off" name="form[]" placeholder="Ваше сообщение"
+												class="rs-input"></textarea>
+										</div>
+									</div>
+
+									<div class="form__footer">
+										<div class="form__agreement">Нажимая на кнопку Отправить, вы подтверждаете
+											согласие на обработку персональных данных и соглашаетесь с нашей
+											политикой конфиденциальности.
+										</div>
+										<div class="form__button">
+											<button type="submit" class="rs-btn _btn-primary">Отправить</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="rs-feedback__maps">
+							<div class="rs-feedback__img">
+								<img src="./img/blocks/feedback/map-fish.jpg" alt="">
+							</div>
+							<div class="rs-feedback__label">
+								<div class="rs-feedback__label_head">
+									<h4 class="rst-r-25">АТЭС-Нововоронеж</h4>
+								</div>
+								<div class="rs-feedback__label_body">
+									<ul>
+										<li>396073, Воронежская обл., г. Нововоронеж, Заводской проезд, д. 1</li>
+										<li><a href="tel:74736453541">+7 (47364) 5-35-41</a></li>
+										<li><a href="mailto:info_nv@atomtes.ru">info_nv@atomtes.ru</a></li>
+										<li><a href="https://vk.com/nvates">https://vk.com/nvates</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
 		</main>
 

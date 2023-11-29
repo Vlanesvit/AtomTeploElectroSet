@@ -114,11 +114,6 @@
 	position: relative;
 	overflow: hidden;
 
-	@media (max-width: 991.98px) {
-		width: 6px;
-		height: 6px;
-	}
-
 	&::after {
 		content: "";
 		position: absolute;
@@ -151,6 +146,7 @@
 		animation: fillPagination 10s ease-in-out both;
 	}
 }
+
 // nav
 .swiper-button-next,
 .swiper-button-prev {
@@ -172,7 +168,7 @@
 
 	@media (any-hover: hover) {
 		&:hover {
-			color: var(--second-color);
+			color: var(--tertiary-color);
 		}
 	}
 

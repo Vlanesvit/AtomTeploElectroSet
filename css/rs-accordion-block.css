@@ -101,6 +101,12 @@
   font-weight: 350;
   line-height: normal;
   letter-spacing: 0.6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media (max-width: 1439.98px) {
   .rs-accordion-block__spollers_body > ul li a {

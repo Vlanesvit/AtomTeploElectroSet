@@ -104,6 +104,8 @@
 						font-weight: 350;
 						line-height: normal;
 						letter-spacing: 0.6px;
+						display: flex;
+						align-items: center;
 
 						@media (max-width: 1439.98px) {
 							font-size: 16px;
