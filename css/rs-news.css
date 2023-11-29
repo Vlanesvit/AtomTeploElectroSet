@@ -543,6 +543,11 @@
   font-weight: 350;
   line-height: 150%; /* 21px */
 }
+@media (max-width: 991.98px) {
+  .rs-news__desc p {
+    display: none;
+  }
+}
 .rs-news__date {
   color: var(--primary-color);
   font-size: 16px;

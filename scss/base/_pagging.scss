@@ -25,10 +25,24 @@
 		background-color: #fff;
 		color: var(--primary-color);
 
+		@media (max-width: 439.98px) {
+			min-width: 35px;
+			min-height: 35px;
+			max-width: 35px;
+			max-height: 35px;
+		}
+
 		&::before {
 			color: inherit;
 			font-size: 19px;
 			transition: all 0.3s ease 0s;
+		}
+
+		&.pagging__arrow_start,
+		&.pagging__arrow_end {
+			@media (max-width: 374.98px) {
+				display: none;
+			}
 		}
 
 		&.pagging__arrow_left,
@@ -85,6 +99,13 @@
 		border-radius: 5px;
 		border: 1.191px solid #f2f2f2;
 		background-color: #fff;
+
+		@media (max-width: 439.98px) {
+			min-width: 35px;
+			min-height: 35px;
+			max-width: 35px;
+			max-height: 35px;
+		}
 	}
 
 	&__link {

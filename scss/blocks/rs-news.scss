@@ -501,6 +501,10 @@
 			font-style: normal;
 			font-weight: 350;
 			line-height: 150%; /* 21px */
+
+			@media (max-width:991.98px){
+				  display: none;
+			}
 		}
 	}
 

@@ -46,6 +46,16 @@
   font-style: normal;
   font-display: swap;
 }
+._rs-icon-filter:before {
+  content: "\e90c";
+  color: #8d8d8d;
+}
+
+._rs-icon-globe:before {
+  content: "\e90e";
+  color: #025ea1;
+}
+
 ._rs-icon-chevron-bottom:before {
   content: "\e900";
   color: #025ea1;
@@ -1132,11 +1142,24 @@ textarea.rs-input {
   background-color: #fff;
   color: var(--primary-color);
 }
+@media (max-width: 439.98px) {
+  .pagging__arrow {
+    min-width: 35px;
+    min-height: 35px;
+    max-width: 35px;
+    max-height: 35px;
+  }
+}
 .pagging__arrow::before {
   color: inherit;
   font-size: 19px;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+@media (max-width: 374.98px) {
+  .pagging__arrow.pagging__arrow_start, .pagging__arrow.pagging__arrow_end {
+    display: none;
+  }
 }
 .pagging__arrow.pagging__arrow_left, .pagging__arrow.pagging__arrow_start {
   margin-right: 6px;
@@ -1188,6 +1211,14 @@ textarea.rs-input {
   border-radius: 5px;
   border: 1.191px solid #f2f2f2;
   background-color: #fff;
+}
+@media (max-width: 439.98px) {
+  .pagging__link, .pagging__more {
+    min-width: 35px;
+    min-height: 35px;
+    max-width: 35px;
+    max-height: 35px;
+  }
 }
 .pagging__link._active {
   color: #fff;
