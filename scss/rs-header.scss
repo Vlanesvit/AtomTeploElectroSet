@@ -123,6 +123,63 @@
 
 		.rs-header__login a {
 			color: var(--primary-color);
+			background-color: transparent;
+		}
+	}
+
+	&.white-header {
+		color: var(--font-color);
+		background-color: #fff;
+
+		&::after {
+			width: 100%;
+		}
+
+		.rs-header__logo {
+			img {
+				&:first-child {
+					opacity: 0;
+					visibility: hidden;
+				}
+
+				&:last-child {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+
+		.search .search-show svg:first-child path {
+			stroke: var(--primary-color);
+		}
+
+		.rs-header__login a {
+			background-color: transparent;
+			color: var(--primary-color);
+			border-color: var(--primary-color);
+
+			@media (any-hover: hover) {
+				&:hover {
+					background-color: var(--primary-color);
+					color: #fff;
+				}
+			}
+		}
+
+		.menu__icon span,
+		.menu__icon::before,
+		.menu__icon::after {
+			background-color: var(--primary-color);
+		}
+
+		.menu .menu__list li {
+			@media (any-hover: hover) {
+				&:hover {
+					& > a {
+						color: var(--primary-color) !important;
+					}
+				}
+			}
 		}
 	}
 
@@ -154,12 +211,25 @@
 
 		.rs-header__login a {
 			background-color: var(--primary-color);
+			color: #fff;
 
 			@media (any-hover: hover) {
 				&:hover {
 					background-color: transparent;
+					color: var(--primary-color);
 				}
 			}
+
+			@media (max-width: 991.98px) {
+				background-color: transparent;
+				color: var(--primary-color);
+			}
+		}
+
+		.menu__icon span,
+		.menu__icon::before,
+		.menu__icon::after {
+			background-color: var(--primary-color);
 		}
 
 		.menu .menu__list li {
@@ -678,6 +748,7 @@
 				pointer-events: none;
 				opacity: 0;
 				visibility: hidden;
+				z-index: 100;
 
 				.search-open & {
 					opacity: 1;

@@ -9,6 +9,11 @@
 		margin-top: 20px;
 	}
 
+	&.search-pagging {
+		justify-content: flex-start;
+		margin-top: 20px;
+	}
+
 	// .pagging__arrow
 	&__arrow {
 		transition: all 0.3s ease 0s;
@@ -52,6 +57,46 @@
 		&.pagging__arrow_right,
 		&.pagging__arrow_end {
 			margin-left: 6px;
+		}
+
+		.search-pagging & {
+			min-width: unset;
+			min-height: unset;
+			max-width: unset;
+			max-height: unset;
+			border: none;
+
+			&::before {
+				display: none;
+			}
+
+			&.pagging__arrow_left,
+			&.pagging__arrow_start {
+				margin-right: 10px;
+			}
+
+			&.pagging__arrow_right,
+			&.pagging__arrow_end {
+				margin-left: 10px;
+			}
+
+			&.pagging__arrow_start,
+			&.pagging__arrow_end {
+				color: var(--primary-color);
+				text-decoration-line: underline;
+			}
+
+			&.pagging__arrow_left,
+			&.pagging__arrow_right {
+				color: #415674;
+			}
+
+			@media (any-hover: hover) {
+				&:hover {
+					color: var(--primary-color);
+					background-color: #fff;
+				}
+			}
 		}
 
 		@media (any-hover: hover) {

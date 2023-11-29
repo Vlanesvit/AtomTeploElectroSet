@@ -1,0 +1,42 @@
+.rs-error-block {
+	margin-top: 200px;
+	margin-bottom: 110px;
+
+	@media (max-width: 1439.98px) {
+		margin: 175px 0px 60px;
+	}
+
+	@media (max-width: 991.98px) {
+		margin: 130px 0px 30px;
+	}
+
+	// .rs-error-block__container
+	&__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	// .rs-error-block__img
+	&__img {
+		img {
+			max-width: 100%;
+			object-fit: contain;
+		}
+	}
+
+	// .rs-error-block__description
+	&__description {
+		margin-top: 45px;
+
+		@media (max-width: 991.98px) {
+			margin: 20px 0px 0px;
+		}
+
+		.rs-btn {
+			margin: 24px auto 0px;
+		}
+	}
+}

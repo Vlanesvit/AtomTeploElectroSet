@@ -116,6 +116,46 @@
 }
 .menu-open .rs-header .rs-header__login a {
   color: var(--primary-color);
+  background-color: transparent;
+}
+.rs-header.white-header {
+  color: var(--font-color);
+  background-color: #fff;
+}
+.rs-header.white-header::after {
+  width: 100%;
+}
+.rs-header.white-header .rs-header__logo img:first-child {
+  opacity: 0;
+  visibility: hidden;
+}
+.rs-header.white-header .rs-header__logo img:last-child {
+  opacity: 1;
+  visibility: visible;
+}
+.rs-header.white-header .search .search-show svg:first-child path {
+  stroke: var(--primary-color);
+}
+.rs-header.white-header .rs-header__login a {
+  background-color: transparent;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+@media (any-hover: hover) {
+  .rs-header.white-header .rs-header__login a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+}
+.rs-header.white-header .menu__icon span,
+.rs-header.white-header .menu__icon::before,
+.rs-header.white-header .menu__icon::after {
+  background-color: var(--primary-color);
+}
+@media (any-hover: hover) {
+  .rs-header.white-header .menu .menu__list li:hover > a {
+    color: var(--primary-color) !important;
+  }
 }
 .rs-header._header-fixed {
   color: var(--font-color);
@@ -137,11 +177,24 @@
 }
 .rs-header._header-fixed .rs-header__login a {
   background-color: var(--primary-color);
+  color: #fff;
 }
 @media (any-hover: hover) {
   .rs-header._header-fixed .rs-header__login a:hover {
     background-color: transparent;
+    color: var(--primary-color);
   }
+}
+@media (max-width: 991.98px) {
+  .rs-header._header-fixed .rs-header__login a {
+    background-color: transparent;
+    color: var(--primary-color);
+  }
+}
+.rs-header._header-fixed .menu__icon span,
+.rs-header._header-fixed .menu__icon::before,
+.rs-header._header-fixed .menu__icon::after {
+  background-color: var(--primary-color);
 }
 @media (any-hover: hover) {
   .rs-header._header-fixed .menu .menu__list li:hover > a {
@@ -703,6 +756,7 @@
     pointer-events: none;
     opacity: 0;
     visibility: hidden;
+    z-index: 100;
   }
   .search-open .rs-header .search__block {
     opacity: 1;

@@ -164,6 +164,22 @@ body {
 	}
 }
 
+.rst-b-40 {
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 1.2px;
+
+	@media (max-width: 1439.98px) {
+		font-size: 30px;
+	}
+	@media (max-width: 767.98px) {
+		font-size: 20px;
+		letter-spacing: 0.6px;
+	}
+}
+
 .rst-r-32 {
 	font-size: 32px;
 	font-style: normal;

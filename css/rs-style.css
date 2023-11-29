@@ -501,6 +501,25 @@ body.aos-animate::after {
   }
 }
 
+.rst-b-40 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+@media (max-width: 1439.98px) {
+  .rst-b-40 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767.98px) {
+  .rst-b-40 {
+    font-size: 20px;
+    letter-spacing: 0.6px;
+  }
+}
+
 .rst-r-32 {
   font-size: 32px;
   font-style: normal;
@@ -1233,6 +1252,12 @@ textarea.rs-input {
     margin-top: 20px;
   }
 }
+.pagging.search-pagging {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 20px;
+}
 .pagging__arrow {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -1277,6 +1302,35 @@ textarea.rs-input {
 }
 .pagging__arrow.pagging__arrow_right, .pagging__arrow.pagging__arrow_end {
   margin-left: 6px;
+}
+.search-pagging .pagging__arrow {
+  min-width: unset;
+  min-height: unset;
+  max-width: unset;
+  max-height: unset;
+  border: none;
+}
+.search-pagging .pagging__arrow::before {
+  display: none;
+}
+.search-pagging .pagging__arrow.pagging__arrow_left, .search-pagging .pagging__arrow.pagging__arrow_start {
+  margin-right: 10px;
+}
+.search-pagging .pagging__arrow.pagging__arrow_right, .search-pagging .pagging__arrow.pagging__arrow_end {
+  margin-left: 10px;
+}
+.search-pagging .pagging__arrow.pagging__arrow_start, .search-pagging .pagging__arrow.pagging__arrow_end {
+  color: var(--primary-color);
+  text-decoration-line: underline;
+}
+.search-pagging .pagging__arrow.pagging__arrow_left, .search-pagging .pagging__arrow.pagging__arrow_right {
+  color: #415674;
+}
+@media (any-hover: hover) {
+  .search-pagging .pagging__arrow:hover {
+    color: var(--primary-color);
+    background-color: #fff;
+  }
 }
 @media (any-hover: hover) {
   .pagging__arrow:hover {
