@@ -1,0 +1,168 @@
+.rs-contact__spollers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+@media (max-width: 1439.98px) {
+  .rs-contact__spollers {
+    gap: 20px;
+  }
+}
+@media (max-width: 1169.98px) {
+  .rs-contact__spollers {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-contact__spollers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767.98px) {
+  .rs-contact__spollers {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.rs-contact__spollers_item {
+  padding: 30px;
+  background-color: var(--second-color);
+  border-radius: 10px;
+}
+@media (max-width: 1439.98px) {
+  .rs-contact__spollers_item {
+    padding: 20px;
+  }
+}
+.rs-contact__spollers_item:first-child {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.rs-contact__spollers_item:first-child .rs-contact__spollers_head > h6 {
+  color: #fff;
+}
+.rs-contact__spollers_item:first-child .rs-contact__spollers_title {
+  color: #fff;
+}
+.rs-contact__spollers_item:first-child .rs-contact__spollers_body ul li span {
+  color: #fff;
+}
+@media (any-hover: hover) {
+  .rs-contact__spollers_item:first-child .rs-contact__spollers_body ul li a:hover {
+    color: var(--tertiary-color);
+  }
+}
+.rs-contact__spollers_head {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 25px;
+}
+@media (max-width: 1169.98px) {
+  .rs-contact__spollers_head {
+    padding: 0px 0px 10px;
+  }
+}
+.rs-contact__spollers_head > h6 {
+  color: var(--primary-color);
+}
+.rs-contact__spollers_title {
+  width: 100%;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  color: var(--primary-color);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.39px;
+}
+.rs-contact__spollers_title::before {
+  color: inherit;
+  font-size: 17px;
+  margin-left: 5px;
+  display: block;
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+}
+.rs-contact__spollers_title._spoller-active::before {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+@media (min-width: 767.98px) {
+  .rs-contact__spollers_title {
+    display: none;
+  }
+}
+.rs-contact__spollers_body {
+  margin-top: 20px;
+}
+@media (max-width: 1169.98px) {
+  .rs-contact__spollers_body {
+    margin-top: 10px;
+  }
+}
+.rs-contact__spollers_body ul {
+  padding-right: 22px;
+}
+@media (max-width: 1439.98px) {
+  .rs-contact__spollers_body ul {
+    padding: 0;
+  }
+}
+.rs-contact__spollers_body ul li {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 0.48px;
+}
+.rs-contact__spollers_body ul li:not(:last-child) {
+  margin-bottom: 22.5px;
+}
+@media (max-width: 1439.98px) {
+  .rs-contact__spollers_body ul li:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-contact__spollers_body ul li {
+    font-size: 13px;
+  }
+}
+.rs-contact__spollers_body ul li span {
+  color: var(--primary-color);
+  display: block;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: 0.42px;
+}
+@media (max-width: 991.98px) {
+  .rs-contact__spollers_body ul li span {
+    font-size: 12px;
+  }
+}
+.rs-contact__spollers_body ul li a {
+  -webkit-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
+}
+@media (any-hover: hover) {
+  .rs-contact__spollers_body ul li a:hover {
+    color: var(--primary-color);
+  }
+}

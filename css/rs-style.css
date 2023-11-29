@@ -616,6 +616,19 @@ body.aos-animate::after {
   }
 }
 
+.rst-l-16 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+@media (max-width: 991.98px) {
+  .rst-l-16 {
+    font-size: 13px;
+  }
+}
+
 .rs-btn {
   position: relative;
   overflow: hidden;
