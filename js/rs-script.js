@@ -42,33 +42,6 @@ function addLoadedClass() {
 addLoadedClass()
 
 /* ====================================
-Анимация чисел
-==================================== */
-import { CountUp } from '../lib/countUp.min.js';
-window.onload = function () {
-	let digitsCounters = document.querySelectorAll("[data-digits-counter]")
-	const options = {
-		// Скорость
-		duration: 2,
-		// Пробел для тысячных
-		separator: ' ',
-		// Прокрутка во вьюпорте
-		enableScrollSpy: true
-	};
-
-	if (digitsCounters.length) {
-		digitsCounters.forEach(digitsCounter => {
-			let demo = new CountUp(digitsCounter, digitsCounter.dataset.digitsCounter, options);
-			if (!demo.error) {
-				demo.start();
-			} else {
-				console.error(demo.error);
-			}
-		});
-	}
-}
-
-/* ====================================
 Спойлеры/аккордионы
 ==================================== */
 /*
@@ -1516,4 +1489,117 @@ function uniqArray(array) {
 	return array.filter(function (item, index, self) {
 		return self.indexOf(item) === index;
 	});
+}
+
+
+//========================================================================================================================================================
+// Вспомогательные модули блокировки прокрутки
+let bodyLockStatus = true;
+let bodyLockToggle = (delay = 300) => {
+	if (document.documentElement.classList.contains('lock')) {
+		bodyUnlock(delay);
+	} else {
+		bodyLock(delay);
+	}
+}
+let bodyUnlock = (delay = 300) => {
+	let body = document.querySelector("body");
+	if (bodyLockStatus) {
+		let lock_padding = document.querySelectorAll("[data-lp]");
+		setTimeout(() => {
+			for (let index = 0; index < lock_padding.length; index++) {
+				const el = lock_padding[index];
+				el.style.paddingRight = '0px';
+			}
+			body.style.paddingRight = '0px';
+			document.documentElement.classList.remove("lock");
+		}, delay);
+		bodyLockStatus = false;
+		setTimeout(function () {
+			bodyLockStatus = true;
+		}, delay);
+	}
+}
+let bodyLock = (delay = 300) => {
+	let body = document.querySelector("body");
+	if (bodyLockStatus) {
+		let lock_padding = document.querySelectorAll("[data-lp]");
+		for (let index = 0; index < lock_padding.length; index++) {
+			const el = lock_padding[index];
+			// el.style.paddingRight = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
+		}
+		body.style.paddingRight = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
+		document.documentElement.classList.add("lock");
+
+		bodyLockStatus = false;
+		setTimeout(function () {
+			bodyLockStatus = true;
+		}, delay);
+	}
+}
+
+//========================================================================================================================================================
+// Вспомогательные модули плавного раскрытия и закрытия объекта
+let _slideUp = (target, duration = 500, showmore = 0) => {
+	if (!target.classList.contains('_slide')) {
+		target.classList.add('_slide');
+		target.style.transitionProperty = 'height, margin, padding';
+		target.style.transitionDuration = duration + 'ms';
+		target.style.height = `${target.offsetHeight}px`;
+		target.offsetHeight;
+		target.style.overflow = 'hidden';
+		target.style.height = showmore ? `${showmore}px` : `0px`;
+		target.style.paddingTop = 0;
+		target.style.paddingBottom = 0;
+		target.style.marginTop = 0;
+		target.style.marginBottom = 0;
+		window.setTimeout(() => {
+			target.hidden = !showmore ? true : false;
+			!showmore ? target.style.removeProperty('height') : null;
+			target.style.removeProperty('padding-top');
+			target.style.removeProperty('padding-bottom');
+			target.style.removeProperty('margin-top');
+			target.style.removeProperty('margin-bottom');
+			!showmore ? target.style.removeProperty('overflow') : null;
+			target.style.removeProperty('transition-duration');
+			target.style.removeProperty('transition-property');
+			target.classList.remove('_slide');
+		}, duration);
+	}
+}
+let _slideDown = (target, duration = 500, showmore = 0) => {
+	if (!target.classList.contains('_slide')) {
+		target.classList.add('_slide');
+		target.hidden = target.hidden ? false : null;
+		showmore ? target.style.removeProperty('height') : null;
+		let height = target.offsetHeight;
+		target.style.overflow = 'hidden';
+		target.style.height = showmore ? `${showmore}px` : `0px`;
+		target.style.paddingTop = 0;
+		target.style.paddingBottom = 0;
+		target.style.marginTop = 0;
+		target.style.marginBottom = 0;
+		target.offsetHeight;
+		target.style.transitionProperty = "height, margin, padding";
+		target.style.transitionDuration = duration + 'ms';
+		target.style.height = height + 'px';
+		target.style.removeProperty('padding-top');
+		target.style.removeProperty('padding-bottom');
+		target.style.removeProperty('margin-top');
+		target.style.removeProperty('margin-bottom');
+		window.setTimeout(() => {
+			target.style.removeProperty('height');
+			target.style.removeProperty('overflow');
+			target.style.removeProperty('transition-duration');
+			target.style.removeProperty('transition-property');
+			target.classList.remove('_slide');
+		}, duration);
+	}
+}
+let _slideToggle = (target, duration = 500) => {
+	if (target.hidden) {
+		return _slideDown(target, duration);
+	} else {
+		return _slideUp(target, duration);
+	}
 }

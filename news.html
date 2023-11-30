@@ -172,6 +172,7 @@
 			</section>
 
 			<link rel="stylesheet" href="css/rs-news.css">
+			<script src="js/rs-news-filter.js" defer></script>
 			<section class="rs-news rs-news-main">
 				<div class="rs-news__container">
 					<div class="rs-news__filter">
@@ -179,13 +180,11 @@
 
 						<button type="button" class="rs-news__filter_btn _rs-icon-filter"></button>
 
-						<div class="rs-news__filter_body">
+						<div class="rs-news__filter_body" hidden>
 							<div class="rs-news__filter_wrapper">
 								<form action="#">
 									<div class="rs-news__filter_list" data-one-select>
 										<div class="rs-news__filter_item">
-											<!-- Скрипт переделывает селект в отдельный блок, см. rs-script.js
-											Если нужна дополнительно отправка формы после выбора, то добавь data-submit в select-->
 											<select name="form[]" class="custom-select" data-scroll data-show-selected
 												data-class-modif="one-select">
 												<option value="0" selected data-class="_select-selected">Направление
@@ -248,7 +247,7 @@
 										<p>Установленная мощность планируемой станции составит 100 МВт.</p>
 									</div>
 									<div class="rs-news__footer">
-										<ul class="rs-news__tag">
+										<ul class="tag-list">
 											<li>Росатом</li>
 											<li>Партнерство</li>
 										</ul>
@@ -283,7 +282,7 @@
 											низкоуглеродных и возобновляемых источников.</p>
 									</div>
 									<div class="rs-news__footer">
-										<ul class="rs-news__tag">
+										<ul class="tag-list">
 											<li>Росатом</li>
 											<li>АТЭС-Полярные зори</li>
 										</ul>
@@ -314,7 +313,7 @@
 											«Усольехимпром».</p>
 									</div>
 									<div class="rs-news__footer">
-										<ul class="rs-news__tag">
+										<ul class="tag-list">
 											<li>Партнерство</li>
 											<li>АТЭС-Заречный</li>
 										</ul>
@@ -346,7 +345,7 @@
 											№ 1.</p>
 									</div>
 									<div class="rs-news__footer">
-										<ul class="rs-news__tag">
+										<ul class="tag-list">
 											<li>Строительство</li>
 											<li>АТЭС-Сосновый бор</li>
 										</ul>
@@ -496,7 +495,7 @@
 	<script>SmoothScroll({ animationTime: 800, stepSize: 100, accelerationDelta: 50, accelerationMax: 3, touchpadSupport: false, });</script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>AOS.init({ duration: 500, easing: 'ease-out-quart', once: false });</script>
-	<script src="js/rs-script.js" type="module"></script>
+	<script src="js/rs-script.js"></script>
 
 </body>
 
