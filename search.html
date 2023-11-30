@@ -247,7 +247,7 @@
 							<div class="rs-footer__logo">
 								<img src="./img/footer/logo_white.svg" alt="">
 							</div>
-							<a href="#" class="rs-btn _btn-white">Отправить сообщение</a>
+							<a href="#" class="rs-btn _btn-white" data-popup="#form">Отправить сообщение</a>
 						</div>
 						<div class="rs-footer__info">
 							<div data-spollers="991.98, max" data-one-spoller class="rs-footer__spollers">
@@ -334,6 +334,67 @@
 			</div>
 		</footer>
 
+		<div id="form" class="popup popup-form">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close _rs-icon-close"></button>
+					<div class="popup__text">
+						<h4 class="rst-r-25">Здесь вы можете задать любые интересующие вопросы</h4>
+
+						<div class="popup__form">
+							<form action="#" class="form">
+								<div class="form__wrapper">
+									<div class="form__block">
+										<div class="form__line">
+											<input autocomplete="off" type="text" name="form[]"
+												data-error="Фамилия Имя Отчество" data-validate data-required required
+												placeholder="Фамилия Имя Отчество" class="rs-input">
+										</div>
+										<div class="form__line">
+											<input autocomplete="off" type="tel" name="form[]" data-error="Телефон"
+												data-validate data-required required placeholder="Телефон"
+												class="rs-input">
+										</div>
+										<div class="form__line">
+											<input autocomplete="off" type="email" name="form[]" data-error="E-mail"
+												data-validate="email" data-required required placeholder="E-mail"
+												class="rs-input">
+										</div>
+										<div class="form__line">
+											<select name="form[]" class="custom-select" data-scroll data-show-selected
+												data-class-modif="one-select">
+												<option value="0" selected data-class="_select-selected">Выберите филиал
+												</option>
+												<option value="1">АТЭС-Нововоронеж</option>
+												<option value="2">АТЭС-Десногорск</option>
+												<option value="3">АТЭС-Полярные зори</option>
+												<option value="4">АТЭС-Заречный</option>
+												<option value="5">АТЭС-Удомля</option>
+												<option value="6">АТЭС-Сосновый бор</option>
+											</select>
+										</div>
+										<div class="form__line">
+											<textarea autocomplete="off" name="form[]" placeholder="Ваше сообщение"
+												class="rs-input"></textarea>
+										</div>
+									</div>
+
+									<div class="form__agreement">Нажимая на кнопку Отправить, вы подтверждаете
+										согласие на обработку персональных данных и соглашаетесь с нашей
+										политикой конфиденциальности.
+									</div>
+
+									<div class="form__button">
+										<button type="submit" class="rs-btn _btn-primary">Отправить</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -344,6 +405,35 @@
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>AOS.init({ duration: 500, easing: 'ease-out-quart', once: false });</script>
 	<script src="js/rs-script.js"></script>
+	<script type="module">
+		/* ====================================
+		Анимация чисел
+		==================================== */
+		import { CountUp } from './lib/countUp.min.js';
+		window.onload = function () {
+			let digitsCounters = document.querySelectorAll("[data-digits-counter]")
+			if (digitsCounters.length > 0) {
+				const options = {
+					// Скорость
+					duration: 2,
+					// Пробел для тысячных
+					separator: ' ',
+					// Прокрутка во вьюпорте
+					enableScrollSpy: true
+				};
+				if (digitsCounters.length) {
+					digitsCounters.forEach(digitsCounter => {
+						let demo = new CountUp(digitsCounter, digitsCounter.dataset.digitsCounter, options);
+						if (!demo.error) {
+							demo.start();
+						} else {
+							console.error(demo.error);
+						}
+					});
+				}
+			}
+		}
+	</script>
 
 </body>
 

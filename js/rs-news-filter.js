@@ -26,37 +26,8 @@ function filterNews() {
 							// form.submit();
 						}
 					})
-
-					// // Клик на кнопку отправки с проверкой на заполненность полей
-					// formSendBtn.addEventListener('click', function (e) {
-					// 	if (options.dataset.value == 0 && options.classList.contains('_select-selected')) {
-					// 		// Отключаем перезагрузку страницы/отправку формы и даем классы ошибок для полей
-					// 		e.preventDefault();
-					// 		// select.classList.add('_select-error')
-					// 	}
-					// 	else if (options.dataset.value != 0 && options.classList.contains('_select-selected')) {
-					// 		// select.classList.remove('_select-error')
-					// 	}
-					// })
 				});
 			}
-
-			// if (selectTitle) {
-			// 	// Убираем класс ошибки при клике на выпадающий список
-			// 	selectTitle.addEventListener('click', function () {
-			// 		select.classList.remove('_select-error')
-			// 	})
-			// }
-
-			// if (formSendClear) {
-			// 	// Кнопка отчистки
-			// 	formSendClear.addEventListener('click', function (e) {
-			// 		for (let i = 0; i < selectOptions.length; i++) {
-			// 			select.classList.remove('_select-error')
-			// 			selectOptions[0].click();
-			// 		}
-			// 	})
-			// }
 		}
 	});
 
