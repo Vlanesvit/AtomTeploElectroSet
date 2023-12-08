@@ -1398,33 +1398,9 @@ formFieldsInit({
 /* ====================================
 Инициализация галереи
 ==================================== */
-/*
-data-gallery - блок галереи 
-data-gallery-item - блок с картинкой
-data-src - ссылка на картинку 
-*/
-if (document.querySelector('[data-gallery]')) {
-	const galleries = document.querySelectorAll('[data-gallery]');
-	if (galleries.length) {
-		let galleyItems = [];
-		galleries.forEach(gallery => {
-			galleyItems.push({
-				gallery,
-				galleryClass: lightGallery(gallery, {
-					plugins: [lgZoom],
-					licenseKey: '7EC452A9-0CFD441C-BD984C7C-17C8456E',
-					selector: '[data-gallery-item]',
-					// Скорость
-					speed: 800,
-					// Отключить кнопку Скачать
-					download: false,
-					// Надпись под фото (Вывод атрибута alt у img)
-					appendSubHtmlTo: false,
-				})
-			})
-		});
-	}
-}
+Fancybox.bind("[data-fancybox]", {
+	// Your custom options
+});
 
 /* ====================================
 Добавить картинкам draggable="false"
