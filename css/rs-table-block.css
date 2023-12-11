@@ -39,7 +39,7 @@
 }
 @media (min-width: 1439.98px) {
   .rs-table-block__content table thead tr th:first-child {
-    min-width: 159px;
+    width: 159px;
   }
 }
 .rs-table-block__content table tbody tr td {
@@ -67,7 +67,7 @@
 }
 @media (min-width: 1439.98px) {
   .rs-table-block__content table tbody tr td:first-child {
-    min-width: 159px;
+    width: 159px;
   }
 }
 .rs-table-block__content table tbody tr:not(:nth-child(-n+7)) {
