@@ -10,6 +10,8 @@ function map() {
 			center: [61.785022, 34.346842],
 			// Уровень масштабирования
 			zoom: 3.5,
+		}, {
+			suppressMapOpenBlock: true
 		});
 
 		// Данные каждого маркера
@@ -62,7 +64,38 @@ function map() {
 			iconContentOffset: [0, 0], // cмещение слоя с содержимым относительно слоя с картинкой
 		});
 
+		let windowWidth = window.innerWidth;
+		let paramsMap;
+		console.log(windowWidth);
+
 		for (let i = 0; i < branchData.length; i++) {
+			if (windowWidth <= 991.98) {
+				console.log('1');
+				paramsMap = {
+					balloonShadow: false,
+					// balloonLayout: MyBalloonLayout,
+					// balloonContentLayout: MyBalloonContentLayout,
+					balloonPanelMaxMapArea: Infinity,
+					// Не скрываем иконку при открытом балуне.
+					hideIconOnBalloonOpen: false,
+					// И дополнительно смещаем балун, для открытия над иконкой.
+					balloonOffset: [0, 0]
+				}
+			}
+			else if (windowWidth > 991.98) {
+				console.log('2');
+				paramsMap = {
+					balloonShadow: false,
+					// balloonLayout: MyBalloonLayout,
+					// balloonContentLayout: MyBalloonContentLayout,
+					balloonPanelMaxMapArea: 0,
+					// Не скрываем иконку при открытом балуне.
+					hideIconOnBalloonOpen: false,
+					// И дополнительно смещаем балун, для открытия над иконкой.
+					balloonOffset: [-430, 110]
+				}
+			}
+
 			let marks = new ymaps.Placemark(branchData[i].location, {
 				// Зададим содержимое заголовка балуна.
 				balloonContentHeader:
@@ -78,16 +111,8 @@ function map() {
 				,
 				// Зададим содержимое всплывающей подсказки.
 				hintContent: `${branchData[i].title}`,
-			}, {
-				balloonShadow: false,
-				// balloonLayout: MyBalloonLayout,
-				// balloonContentLayout: MyBalloonContentLayout,
-				balloonPanelMaxMapArea: 0,
-				// Не скрываем иконку при открытом балуне.
-				hideIconOnBalloonOpen: false,
-				// И дополнительно смещаем балун, для открытия над иконкой.
-				balloonOffset: [-430, 110]
-			})
+			},
+				paramsMap)
 			pinsCollection.add(marks);
 		}
 
